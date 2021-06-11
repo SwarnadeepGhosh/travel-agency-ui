@@ -313,7 +313,8 @@ header .fa-bars{
 }
 
 .about{
-  min-height: 100vh;
+  /*min-height: 100vh;*/
+  margin-bottom: 20px;
 }
 
 .about .row{
@@ -325,17 +326,17 @@ header .fa-bars{
 }
 
 .about .row .image img{
-  height:65vh;
-  width: 50vw;
+  /*height:65vh;
+  width: 50vw;*/
 }
 
 .about .row .content h3{
-  font-size: 4rem;
+  font-size: 3.5rem;
   color:#0098a1;
 }
 
 .about .row .content p{
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   color:#333;
 }
 
@@ -360,6 +361,19 @@ header .fa-bars{
   margin-right: 1rem;
 }
 
+.whyUs img{
+  margin-bottom: 5px;
+  width: 60%;
+}
+.whyUs h3{
+  font-size: 2.5rem;
+  color:#0098a1;
+}
+.whyUs p{
+  font-size: 1.4rem;
+  color:#444444;
+}
+
 .money{
   color:#0098a1;
 }
@@ -370,7 +384,8 @@ header .fa-bars{
 }
 
 .gallery{
-  min-height: 100vh;
+  /*min-height: 100vh;*/
+  margin-bottom: 20px;
 }
 
 .gallery .box-container{
