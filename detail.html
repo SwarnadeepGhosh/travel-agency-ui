@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Accoladestravelcations</title>
+    <title>Detail Page - Accoladestravelcations</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
 
     <!-- font awesome cdn file link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
@@ -23,7 +22,7 @@
 
     <header>
 
-        <a href="#" class="logo"><span>Accoladestravelcations</span> Pvt Ltd</a>
+        <a href="./index.html" class="logo"><span>Accoladestravelcations</span> Pvt Ltd</a>
 
         <nav class="navbar">
             <ul>
@@ -32,7 +31,7 @@
                 <li><a data-scroll="about" href="./about.html#about">about</a></li>
                 <li><a data-scroll="" href="./plans.html">plans</a></li>
                 <li><a data-scroll="review" href="./index.html#review">reviews</a></li>
-                <li><a data-scroll="contact" href="contact.html">contact</a></li>
+                <li><a data-scroll="contact" href="contact.html#contact">contact</a></li>
             </ul>
         </nav>
 
@@ -52,7 +51,7 @@
         </div>
 
         <div class="content">
-            <h1>explore new places, <br> adventure awaits.</h1>
+            <h1>Explore Hotels, Resorts and Home Stays.</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod necessitatibus sunt atque consequuntur
                 quam veniam magnam consectetur, odio velit alias!</p>
         </div>
@@ -83,303 +82,466 @@
 
     <!-- home section ends -->
 
-    <!-- feature section starts  -->
-
-    <section class="feature" id="feature">
-
-        <h1 class="heading"><span>f</span>eatured <span>l</span>ocations</h1>
-
-        <div class="card-container">
-
-            <div class="card">
-                <span class="discount">-35%</span>
-                <img src="images/card1.jpg" alt="">
-                <div class="content">
-                    <h3 class="title">hawaii</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi consequuntur ea molestias
-                        illo. Porro error facilis obcaecati. Quisquam, placeat.</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#"><button class="btn">check out!</button></a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/card2.jpg" alt="">
-                <div class="content">
-                    <h3 class="title">egypt</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi consequuntur ea molestias
-                        illo. Porro error facilis obcaecati. Quisquam, placeat.</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#"><button class="btn">check out!</button></a>
-                </div>
-            </div>
-
-            <div class="card">
-                <span class="discount">-45%</span>
-                <img src="images/card3.jpg" alt="">
-                <div class="content">
-                    <h3 class="title">india</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi consequuntur ea molestias
-                        illo. Porro error facilis obcaecati. Quisquam, placeat.</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#"><button class="btn">check out!</button></a>
-                </div>
-            </div>
-
+    <!-- Breadcumb -->
+    <section>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" style="font-size: 1.4rem;"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item" style="font-size: 1.4rem;"><a href="#">Hotels</a></li>
+                    <li class="breadcrumb-item" style="font-size: 1.4rem;"><a href="#">Kolkata</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="font-size: 1.4rem;">Hyaat Regency</li>
+                </ol>
+            </nav>
         </div>
 
     </section>
 
+    <!-- Hotel/Resort/Home Stay Description Starts -->
 
-    <!-- feature section ends -->
-    <!-- about section starts  -->
+    <section id="details" class="gallery pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-9">
 
-    <section id="about" class="about">
+                            <!-- Hotel Details top  -->
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body">
+                                    <h1 class="mb-3 hotel-heading" style="font-size: 3.3rem;"><span>H</span>yatt <span>R</span>egency,
+                                        <span>K</span>olkata
+                                    </h1>
+                                    <h4 class="card-subtitle mb-2 text-muted">JA-1, JA Block, Sector III, Bidhannagar,
+                                        Kolkata, West Bengal 700098</h4>
 
-        <h1 class="heading"><span>a</span>bout <span>u</span>s</h1>
+                                    <!-- Photo Grid -->
+                                    <div class="card photogrid" style="width: 100%;">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <img src="./images/hotel1.jpg" class="img-fluid">
+                                                    <img src="./images/resort1.jpg" class="img-fluid">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="./images/resort1.jpg" class="img-fluid">
+                                                    <img src="./images/popularDestination.jpg" class="img-fluid">
+                                                    <img src="./images/featured3.jpg" class="img-fluid">
+                                                </div>
+                                            </div>
 
-        <div class="row">
+                                        </div>
+                                    </div>
 
-            <div class="image">
-                <img src="images/about-img.svg" alt="">
-            </div>
+                                    <ul class="nav justify-content-between details-nav pt-3 w-75">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#about">ABOUT</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#rooms">ROOMS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#amentities">AMENTITIES</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#reviews">REVIEWS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-            <div class="content">
-                <h3>why choose us?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam aut tenetur quaerat omnis
-                    perferendis nesciunt quidem odit quod! Ex excepturi temporibus iste assumenda, odio magnam
-                    laudantium minus asperiores distinctio!</p><br>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, itaque.</p>
-                <a href="#"><button class="btn btn1">read more</button></a>
-                <a href="#"><button class="btn">get started</button></a>
-            </div>
+                            <!-- About Section -->
+                            <section id="about">
+                                <div class="card my-4 details-card" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h5 class="card-title pt-5"><span>A</span>bout <span>t</span>his <span>P</span>roperty </h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                                            et dolore magna aliqua. Tincidunt ornare massa eget egestas purus viverra accumsan. Dui ut ornare lectus 
+                                            sit amet est. Nulla aliquet porttitor lacus luctus. Justo nec ultrices dui sapien eget mi proin sed libero. Nunc sed id semper risus in. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
 
-        </div>
+                            <!-- rooms Section -->
+                            <section id="rooms">
+                                <div class="card my-4 details-card" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h5 class="card-title pt-5"><span>R</span>oom <span>D</span>etails</h5>
+                                        
 
-    </section>
+                                        <div class="container mt-5 mb-1">
+                                            <div class="d-flex justify-content-center row">
+                                                <div class="col-md-12">
+
+                                                    <div class="row mb-2 p-2 bg-white border rounded room-card">
+                                                        <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                                                        <div class="col-md-6 mt-1">
+                                                            <h5>Room Type 1</h5>
+                                                            <div class="d-flex flex-row">
+                                                                <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                                                            </div>
+                                                            <div class="mt-1 mb-1 spec-1"><span>King size Bed</span><span class="dot"></span><span>Air Conditioning</span><span class="dot"></span><span>Balcony<br></span></div>
+                                                            <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Wifi</div>
+                                                        </div>
+                                                        <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                                            <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price is as low as </h6>
+                                                            <div class="d-flex flex-row align-items-center">
+                                                                <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                                                                <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                                                            </div>
+                                                            <div class="d-flex flex-column mt-4"><button class="btn btn-success btn-sm" type="button">Book Now</button></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-2 p-2 bg-white border rounded room-card">
+                                                        <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                                                        <div class="col-md-6 mt-1">
+                                                            <h5>Room Type 2</h5>
+                                                            <div class="d-flex flex-row">
+                                                                <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                                                            </div>
+                                                            <div class="mt-1 mb-1 spec-1"><span>King size Bed</span><span class="dot"></span><span>Air Conditioning</span><span class="dot"></span><span>Balcony<br></span></div>
+                                                            <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Wifi</div>
+                                                        </div>
+                                                        <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                                            <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price is as low as </h6>
+                                                            <div class="d-flex flex-row align-items-center">
+                                                                <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                                                                <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                                                            </div>
+                                                            <div class="d-flex flex-column mt-4"><button class="btn btn-success btn-sm" type="button">Book Now</button></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-2 p-2 bg-white border rounded room-card">
+                                                        <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                                                        <div class="col-md-6 mt-1">
+                                                            <h5>Room Type 3</h5>
+                                                            <div class="d-flex flex-row">
+                                                                <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                                                            </div>
+                                                            <div class="mt-1 mb-1 spec-1"><span>King size Bed</span><span class="dot"></span><span>Air Conditioning</span><span class="dot"></span><span>Balcony<br></span></div>
+                                                            <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Wifi</div>
+                                                        </div>
+                                                        <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                                            <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price is as low as </h6>
+                                                            <div class="d-flex flex-row align-items-center">
+                                                                <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                                                                <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                                                            </div>
+                                                            <div class="d-flex flex-column mt-4"><button class="btn btn-success btn-sm" type="button">Book Now</button></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- amentities Section -->
+                            <section id="amentities">
+                                <div class="card my-2 details-card" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h5 class="card-title pt-5"><span>V</span>arious <span>A</span>mentities</h5>
+                                        <div class="row my-3">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item"><i class="fas fa-check-circle"></i> Free Wifi</li>
+                                                            <li class="list-group-item"><i class="fas fa-check-circle"></i> Power Backup</li>
+                                                            <li class="list-group-item"><i class="fas fa-check-circle"></i> Housekeeping</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item"><i class="fas fa-check-circle"></i> Elevator</li>
+                                                            <li class="list-group-item"><i class="fas fa-check-circle"></i> Air Conditioner</li>
+                                                            <li class="list-group-item"><i class="fas fa-check-circle"></i> Card Payment</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item"><i class="fas fa-check-circle"></i> CCTV Cameras</li>
+                                                            <li class="list-group-item"><i class="fas fa-check-circle"></i> First Aid</li>
+                                                            <li class="list-group-item"><i class="fas fa-check-circle"></i> Fire Extinguisher</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- reviews Section -->
+                            <section id="reviews">
+                                <div class="card my-2 details-card" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h5 class="card-title pt-5"><span>C</span>ustomer <span>R</span>eviews </h5>
+                                        
+                                        <div class="container-fluid px-1 mx-auto">
+                                            <div class="row justify-content-center">
+                                                <div class="col-xl-10 col-lg-10 col-md-12 col-12 text-center mb-5">
+
+                                                    <div class="ratings-card">
+                                                        <div class="row justify-content-left d-flex">
+                                                            <div class="col-md-4 d-flex flex-column">
+                                                                <div class="rating-box">
+                                                                    <h1 class="pt-4">4.0</h1>
+                                                                    <p class="">out of 5</p>
+                                                                </div>
+                                                                <div> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-inactive mx-1"></span> </div>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="rating-bar0 justify-content-center">
+                                                                    <table class="text-left mx-auto">
+                                                                        <tr>
+                                                                            <td class="rating-label">Excellent</td>
+                                                                            <td class="rating-bar">
+                                                                                <div class="bar-container">
+                                                                                    <div class="bar-5"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="text-right">123</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="rating-label">Good</td>
+                                                                            <td class="rating-bar">
+                                                                                <div class="bar-container">
+                                                                                    <div class="bar-4"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="text-right">23</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="rating-label">Average</td>
+                                                                            <td class="rating-bar">
+                                                                                <div class="bar-container">
+                                                                                    <div class="bar-3"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="text-right">10</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="rating-label">Poor</td>
+                                                                            <td class="rating-bar">
+                                                                                <div class="bar-container">
+                                                                                    <div class="bar-2"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="text-right">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="rating-label">Terrible</td>
+                                                                            <td class="rating-bar">
+                                                                                <div class="bar-container">
+                                                                                    <div class="bar-1"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="text-right">0</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- First Review -->
+                                                    <div class="ratings-card">
+                                                        <div class="row d-flex">
+                                                            <div class=""> <img class="profile-pic" src="./images/reviewer.jpg"> </div>
+                                                            <div class="d-flex flex-column">
+                                                                <h3 class="mt-2 mb-0">Vikram jit Singh</h3>
+                                                                <div>
+                                                                    <p class="text-left"><span class="text-muted">4.0</span> <span class="fa fa-star star-active ml-3"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-inactive"></span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ml-auto">
+                                                                <p class="text-muted pt-5 pt-sm-3">10 Sept</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row text-left">
+                                                            <h4 class="blue-text mt-3">"An awesome activity to experience"</h4>
+                                                            <p class="content" style="font-size: 1.2rem;">If you really enjoy spending your vacation 'on water' or would like to try something new and exciting for the first time.</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Second Review -->
+                                                    <div class="ratings-card">
+                                                        <div class="row d-flex">
+                                                            <div class=""> <img class="profile-pic" src="./images/reviewer.jpg"> </div>
+                                                            <div class="d-flex flex-column">
+                                                                <h3 class="mt-2 mb-0">Vikram jit Singh</h3>
+                                                                <div>
+                                                                    <p class="text-left"><span class="text-muted">4.0</span> <span class="fa fa-star star-active ml-3"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-inactive"></span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ml-auto">
+                                                                <p class="text-muted pt-5 pt-sm-3">10 Sept</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row text-left">
+                                                            <h4 class="blue-text mt-3">"An awesome activity to experience"</h4>
+                                                            <p class="content" style="font-size: 1.2rem;">If you really enjoy spending your vacation 'on water' or would like to try something new and exciting for the first time.</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Third Review -->
+                                                    <div class="ratings-card">
+                                                        <div class="row d-flex">
+                                                            <div class=""> <img class="profile-pic" src="./images/reviewer.jpg"> </div>
+                                                            <div class="d-flex flex-column">
+                                                                <h3 class="mt-2 mb-0">Vikram jit Singh</h3>
+                                                                <div>
+                                                                    <p class="text-left"><span class="text-muted">4.0</span> <span class="fa fa-star star-active ml-3"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-active"></span> <span class="fa fa-star star-inactive"></span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ml-auto">
+                                                                <p class="text-muted pt-5 pt-sm-3">10 Sept</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row text-left">
+                                                            <h4 class="blue-text mt-3">"An awesome activity to experience"</h4>
+                                                            <p class="content" style="font-size: 1.2rem;">If you really enjoy spending your vacation 'on water' or would like to try something new and exciting for the first time.</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
 
 
-    <!-- about section ends -->
-    <!-- gallery section starts  -->
+                        <!-- Sidebar Starts -->
+                        <div class="col-md-3">
+                            <div class="card text-center" style="width: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Booking Helpline Number</h5>
+                                    <h5 class="card-title text-danger" style="font-size: 2.3rem; color: #e60707;">+91 9831 483 152</h5>
+                                    <div class="p-3">
+                                        <a class="btn btn-outline-primary" href="#" role="button" style="font-size: 2rem;">Show Prices</a>
+                                    </div>
+                                    <div class="p-3">
+                                        <a class="btn btn-success" href="#" role="button" style="font-size: 2rem;">Quick Enquiry</a>
+                                    </div>
 
-    <section id="gallery" class="gallery">
+                                    <hr class="my-4">
 
-        <h1 class="heading"><span>g</span>allery</h1>
+                                    <div class="col-md-12 d-flex flex-column">
+                                        <div class="rating-box">
+                                            <p class="py-2" style="font-size: 1.2rem;">Ratings</p>
+                                            <h1 class="pt-1 display-3">4.0</h1>
+                                            <p class="py-2">out of 5</p>
+                                        </div>
+                                        <div> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-inactive mx-1"></span> </div>
+                                    </div>
 
-        <div class="box-container">
+                                    <hr class="my-4">
 
-            <div class="box">
-                <img src="images/img1.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.426729723349!2d88.36426731427858!3d22.82369652946045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8908b72cf9013%3A0xdab7bfaeaa4e45e8!2s215%2C%2012%2C%20Garulia%20Main%20Rd%2C%20Garulia%2C%20Kolkata%2C%20West%20Bengal%20743133!5e0!3m2!1sen!2sin!4v1623433656489!5m2!1sen!2sin" 
+                                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    
 
-            <div class="box">
-                <img src="images/img2.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sidebar Ends -->
 
-            <div class="box">
-                <img src="images/img3.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/img4.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/img5.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/img6.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- gallery section ends -->
-
-    <!-- review section starts  -->
-
-    <section id="review" class="review">
-
-        <h1 class="heading"><span>r</span>eview</h1>
-
-
-        <div class="box-container">
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/pic1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>someone's name</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque
-                        sequi in asperiores ea, nisi ullam?</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
                     </div>
                 </div>
             </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/pic2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>someone's name</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque
-                        sequi in asperiores ea, nisi ullam?</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/pic3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>someone's name</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque
-                        sequi in asperiores ea, nisi ullam?</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-            </div>
-
         </div>
-
     </section>
 
-    <!-- review section ends -->
+    <!-- Best Hotel Deals Ends -->
 
-    <!-- contact section starts  -->
 
-    <section id="contact" class="contact">
+    <!-- FAQ section starts  -->
 
-        <h1 class="heading"><span>c</span>ontact <span>u</span>s</h1>
+    <section id="faq" class="gallery">
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.960043043403!2d72.85186461442511!3d19.109408755888396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8348740e791%3A0xe302e2dd9ab8bae2!2sTravels%20Booking%20Office!5e0!3m2!1sen!2sin!4v1609421049401!5m2!1sen!2sin"
-            width="100%" height="300" frameborder="0" style="border:0; outline:none;" allowfullscreen=""
-            aria-hidden="false" tabindex="0"></iframe>
-
-        <div class="row">
-
-            <div class="contact-info">
-
-                <div class="box">
-                    <h3> <i class="fas fa-home"></i> address </h3>
-                    <p>mumbai, <br>
-                        maharashtra, <br>
-                        400104.</p>
-                </div>
-
-                <div class="box">
-                    <h3> <i class="fas fa-envelope"></i> e-mail </h3>
-                    <p>xyz@gmail.com</p>
-                </div>
-
-                <div class="box">
-                    <h3> <i class="fas fa-phone"></i> phone </h3>
-                    <p>+123 4567 890</p>
-                </div>
-
-            </div>
-
-            <div class="contact-form-container">
-
-                <form action="">
-
-                    <h3>get in touch</h3>
-
-                    <div class="inputBox">
-                        <input type="text" placeholder="full name">
-                        <input type="email" placeholder="e-mail">
+        <h1 class="heading"><span>F</span>requently <span>A</span>sked <span>Q</span>uestions</h1>
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                1. What do you think about First Question ?
+                            </button>
+                        </h2>
                     </div>
 
-                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
-
-                    <input type="submit" value="message">
-
-                </form>
-
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Some placeholder content for the first accordion panel. This panel is shown by default,
+                            thanks
+                            to the <code>.show</code> class.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                2. What do you think about Second Question ?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Some placeholder content for the second accordion panel. This panel is hidden by default.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                3. What do you think about Third Question ?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            And lastly, the placeholder content for the third and final accordion panel. This panel is
+                            hidden by default.
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-
     </section>
 
-    <!-- contact section ends -->
+    <!-- FAQ section ends -->
+
+
+    <!-- Footer section starts -->
 
     <section class="newsletter">
 
-        <h1>sign up 25% discount</h1>
+        <h1>Get Access to Exclusive Deals</h1>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident saepe vel pariatur incidunt libero
-            quo nisi ratione. Ea, corporis.</p>
+        <p>Sign up and we'll send the best deals to you.</p>
 
         <form action="">
             <input type="email" placeholder="enter your email">
@@ -388,28 +550,33 @@
 
     </section>
 
+
     <section class="footer">
 
-        <h1 class="credit">Developed by <span>Swarnadeep</span> on behalf of <span>Accoladestravelcations </span>| all
+        <h1 class="credit">Developed by <a href="https://swarnadeepghosh.github.io/"><span>Swarnadeep</span></a> | on
+            behalf of <span>Accoladestravelcations </span>| all
             rights reserved.</h1>
 
         <div class="icons">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="far fa-envelope"></a>
             <a href="#" class="fab fa-github"></a>
         </div>
 
     </section>
+
+    <!-- Footer section ends -->
 
 
 
 
     <!-- jquery cdn link  -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/main.js"></script>
