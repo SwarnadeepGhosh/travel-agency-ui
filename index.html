@@ -22,16 +22,44 @@
 
     <header>
 
-        <a href="./index.html" class="logo"><span>Accoladestravelcations</span> Pvt Ltd</a>
+        <a href="./index.html" class="logo">
+            <img src="./images/header-logo.jpg" class="img-fluid" alt="Responsive image">
+            <span>Accoladestravelcations</span>
+        </a>
 
         <nav class="navbar">
             <ul>
-                <li><a data-scroll="home" href="./index.html" class="active">home</a></li>
-                <li><a data-scroll="feature" href="./index.html#feature">featured</a></li>
-                <li><a data-scroll="about" href="./about.html#about">about</a></li>
-                <li><a data-scroll="" href="./plans.html">plans</a></li>
-                <li><a data-scroll="review" href="./index.html#review">reviews</a></li>
-                <li><a data-scroll="contact" href="contact.html#contact">contact</a></li>
+                <li><a data-scroll="home" href="./index.html" class="active"><i class="fas fa-home"></i> HOME</a></li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-hotel"></i> HOTELS</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Hotels</a>
+                      <a class="dropdown-item" href="#">Home Stays</a>
+                      <a class="dropdown-item" href="#">Resorts</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-umbrella-beach"></i> HOLIDAY</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Holiday Package</a>
+                      <a class="dropdown-item" href="#">honeymoon package</a>
+                      <a class="dropdown-item" href="#">Festive Package</a>
+                      <a class="dropdown-item" href="#">Vacation Package</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MORE <i class="fas fa-plus"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="./about.html#about"><i class="fas fa-info-circle"></i> About</a>
+                      <a class="dropdown-item" href="./contact.html#contact"><i class="fas fa-phone-alt"></i> Contact</a>
+                      <a class="dropdown-item" href="#"><i class="fas fa-exclamation-triangle"></i> Cancellation</a>
+                      <a class="dropdown-item" href="#"><i class="fas fa-check-circle"></i> Terms and Condition</a>
+                    </div>
+                </li>
+
             </ul>
         </nav>
 
@@ -47,13 +75,11 @@
 
         <div class="video">
             <!--<video src="images/video.mp4" loop muted autoplay></video>-->
-            <img src="./images/hero.jpg" alt="Girl in a jacket" width="100vw">
+            <img src="./images/hero.jpg" alt="Company Tagline" width="100vw">
         </div>
 
         <div class="content">
-            <h1>explore new places, <br> adventure awaits.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod necessitatibus sunt atque consequuntur
-                quam veniam magnam consectetur, odio velit alias!</p>
+            <h1>explore best in class <br> hotels and Holiday plans</h1>
         </div>
 
         <div class="form-container">
@@ -270,10 +296,28 @@
 
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel1.jpg" class="card-img-top img-fluid alt="100%x280">
+                                            <img src="./images/hotel/Ashoka resort in bandhavgarh.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
                                             <div class="card-body">
-                                                <h5 class="card-title">Hotel Raj Palace</h5>
-                                                <p class="card-text">DARJEELING</p>
+                                                <h5 class="card-title">Ashoka Resort</h5>
+                                                <p class="card-text">BANDHAVGARH</p>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <h2 class="card-title money">1500/- <span class="money-line-through">2200/-</span></h2>
+                                                <a href="./detail.html" class="btn btn-primary">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img src="./images/hotel/BISON RESORT IN KANHA, MP.jpeg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Bison Resort in Kanha</h5>
+                                                <p class="card-text">Madhya Pradesh</p>
                                                 <div class="stars">
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
@@ -288,28 +332,10 @@
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel1.jpg" class="card-img-top img-fluid alt="100%x280">
+                                            <img src="./images/hotel/eden_residency shillong.jpeg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
                                             <div class="card-body">
-                                                <h5 class="card-title">Hotel Raj Palace</h5>
-                                                <p class="card-text">DARJEELING</p>
-                                                <div class="stars">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star-half-alt"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                                <h2 class="card-title money">1765/- <span class="money-line-through">2100/-</span></h2>
-                                                <a href="./detail.html" class="btn btn-primary">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img src="./images/hotel1.jpg" class="card-img-top img-fluid alt="100%x280">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Hotel Raj Palace</h5>
-                                                <p class="card-text">DARJEELING</p>
+                                                <h5 class="card-title">Eden Residency</h5>
+                                                <p class="card-text">Shillong</p>
                                                 <div class="stars">
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
@@ -330,10 +356,28 @@
 
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel1.jpg" class="card-img-top img-fluid alt="100%x280">
+                                            <img src="./images/hotel/Ashoka resort in bandhavgarh.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
                                             <div class="card-body">
-                                                <h5 class="card-title">Hotel Raj Palace</h5>
-                                                <p class="card-text">DARJEELING</p>
+                                                <h5 class="card-title">Ashoka Resort</h5>
+                                                <p class="card-text">BANDHAVGARH</p>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <h2 class="card-title money">1500/- <span class="money-line-through">2200/-</span></h2>
+                                                <a href="./detail.html" class="btn btn-primary">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img src="./images/hotel/gandharf hotel, dehradun.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Gandarf Hotel</h5>
+                                                <p class="card-text">Dehradun</p>
                                                 <div class="stars">
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
@@ -348,10 +392,54 @@
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel1.jpg" class="card-img-top img-fluid alt="100%x280">
+                                            <img src="./images/hotel/Green Leaf Hotel in Nainital.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
                                             <div class="card-body">
-                                                <h5 class="card-title">Hotel Raj Palace</h5>
-                                                <p class="card-text">DARJEELING</p>
+                                                <h5 class="card-title">Green Leaf Hotel </h5>
+                                                <p class="card-text">Nainital</p>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <h2 class="card-title money">1765/- <span class="money-line-through">2100/-</span></h2>
+                                                <a href="./detail.html" class="btn btn-primary">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img src="./images/hotel/Hardik Palace in Jaipur.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Hardik Palace</h5>
+                                                <p class="card-text">Jaipur</p>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <h2 class="card-title money">1500/- <span class="money-line-through">2200/-</span></h2>
+                                                <a href="./detail.html" class="btn btn-primary">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img src="./images/hotel/HOTEL PRIME MURTI RESORT IN DOOARS.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Hotel Prime Murti</h5>
+                                                <p class="card-text">Dooars, WB</p>
                                                 <div class="stars">
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
@@ -366,10 +454,10 @@
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel1.jpg" class="card-img-top img-fluid alt="100%x280">
+                                            <img src="./images/hotel/RAJAHAMSA GUEST HOUSE IN VIZAG.jpeg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
                                             <div class="card-body">
-                                                <h5 class="card-title">Hotel Raj Palace</h5>
-                                                <p class="card-text">DARJEELING</p>
+                                                <h5 class="card-title">Rajahamsa Guest House</h5>
+                                                <p class="card-text">Vizag</p>
                                                 <div class="stars">
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
@@ -382,6 +470,7 @@
                                             </div>
                                         </div>
                                     </div>
+
 
                                 </div>
                             </div>
@@ -533,7 +622,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="images/nainital.png" alt="">
+                <img src="images/nainital.jpg" alt="">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-searchs">Nainital</a>
@@ -719,15 +808,13 @@
 
     <section class="footer">
 
-        <h1 class="credit">Developed by <a href="https://swarnadeepghosh.github.io/"><span>Swarnadeep</span></a> | on behalf of <span>Accoladestravelcations </span>| all
+        <h1 class="credit">Developed by <a href="#"><span>Acs. Pvt Ltd</span></a> | on behalf of <span>Accoladestravelcations Pvt Ltd. </span>| all
             rights reserved.</h1>
 
         <div class="icons">
             <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="far fa-envelope"></a>
-            <a href="#" class="fab fa-github"></a>
+            <a href="#" class="fab fa-youtube"></a>
         </div>
 
     </section>

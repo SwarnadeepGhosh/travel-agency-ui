@@ -1,9 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
+
+/* Variables **************************************************************************/
+:root {
+  --color-primary: #0098A1;
+  --color-secondary: #333;
+  --color-white: #ffffff;
+  --color-yellow: #FBC02D;
+  --open-sans-font: 'Open Sans', sans-serif;
+  --poppins-font: 'Poppins', sans-serif;
+  --kalam-font: 'Kalam', cursive;
+}
 
 * {
-  font-family: "Kalam", cursive;
+  font-family: var(--open-sans-font);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,7 +23,8 @@
   text-transform: capitalize;
 }
 
-/* Hotel Details - Rooms Section Starts */
+
+/* Hotel Details - Rooms Section Starts **************************************************************************/
 .ratings i {
   font-size: 16px;
   color: red;
@@ -49,9 +62,9 @@ h5 {
 .para {
   font-size: 16px;
 }
-/* Hotel Details - Rooms Section Ends */
+/* Hotel Details - Rooms Section Ends **************************************************************************/
 
-/* Review ad Rating Section - Hotel Detail page starts */
+/* Review ad Rating Section - Hotel Detail page starts **************************************************************************/
 .ratings-card {
   border-radius: 5px;
   background-color: #fff;
@@ -66,7 +79,7 @@ h5 {
   height: 130px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #0091EA;
+  background-color: var(--color-primary);
   color: #fff
 }
 
@@ -93,35 +106,35 @@ h5 {
 .bar-5 {
   width: 70%;
   height: 13px;
-  background-color: #FBC02D;
+  background-color: var(--color-yellow);
   border-radius: 20px
 }
 
 .bar-4 {
   width: 30%;
   height: 13px;
-  background-color: #FBC02D;
+  background-color: var(--color-yellow);
   border-radius: 20px
 }
 
 .bar-3 {
   width: 20%;
   height: 13px;
-  background-color: #FBC02D;
+  background-color: var(--color-yellow);
   border-radius: 20px
 }
 
 .bar-2 {
   width: 10%;
   height: 13px;
-  background-color: #FBC02D;
+  background-color: var(--color-yellow);
   border-radius: 20px
 }
 
 .bar-1 {
   width: 0%;
   height: 13px;
-  background-color: #FBC02D;
+  background-color: var(--color-yellow);
   border-radius: 20px
 }
 
@@ -130,7 +143,7 @@ td {
 }
 
 .star-active {
-  color: #FBC02D;
+  color: var(--color-yellow);
   margin-top: 10px;
   margin-bottom: 10px
 }
@@ -147,7 +160,7 @@ td {
 }
 
 .blue-text {
-  color: #0091EA
+  color: var(--color-primary)
 }
 
 .content {
@@ -171,9 +184,12 @@ td {
   cursor: pointer
 }
 
-/* Review ad Rating Section - Hotel Detail page starts */
+/* Review and Rating Section - Hotel Detail page ends **************************************************************************/
 
-
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
 p {
   font-family: "Poppins", sans-serif;
 }
@@ -185,13 +201,17 @@ a:hover {
   text-decoration: none;
 }
 
-html {
-  overflow-x: hidden;
-  font-size: 62.5%;
+/********************* Header Section Starts *****************************************************/
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown > .dropdown-toggle:active { /*Without this, clicking will make it sticky*/
+  pointer-events: none;
 }
 
 .heading {
-  color: #333;
+  color: var(--color-secondary);
   font-size: 3.8rem;
   padding: 1rem;
   padding-top: 6rem;
@@ -200,32 +220,32 @@ html {
 }
 
 .heading span {
-  color: #0098a1;
+  color: var(--color-primary);
 }
 
 .short-heading {
-  color: #333;
+  color: var(--color-secondary);
   font-size: 3.8rem;
   padding: 1rem;
   text-align: center;
   letter-spacing: 0.2rem;
 }
 .short-heading span {
-  color: #0098a1;
+  color: var(--color-primary);
 }
 .short-heading-arrows {
   padding: 16px;
 }
 
 .hotel-heading {
-  color: #333;
+  color: var(--color-secondary);
   font-size: 3rem;
   padding: 0.5rem;
   text-align: left;
   letter-spacing: 0.15rem;
 }
 .hotel-heading span {
-  color: #0098a1;
+  color: var(--color-primary);
 }
 
 header {
@@ -252,12 +272,17 @@ header {
 }
 
 header .logo {
-  color: #333;
-  font-size: 3rem;
+  color: var(--color-secondary);
 }
 
+header .logo img{
+  vertical-align: baseline;
+  width: 2.5rem;
+}
 header .logo span {
-  color: #0098a1;
+  color: var(--color-primary);
+  font-family: var(--poppins-font);
+  font-size: 2.5rem;
 }
 
 header .navbar ul {
@@ -274,23 +299,25 @@ header .navbar ul li {
 }
 
 header .navbar ul li a {
-  font-size: 2rem;
-  color: #333;
+  font-size: 1.6rem;
+  color: var(--color-secondary);
   transition: 0.2s linear;
 }
 
 header .navbar ul li .active,
 header .navbar ul li a:hover {
-  color: #0098a1;
+  color: var(--color-primary);
 }
 
 header .fa-bars {
   font-size: 3rem;
-  color: #0098a1;
+  color: var(--color-primary);
   cursor: pointer;
   display: none;
 }
+/********************* Header  Section ends *****************************************************/
 
+/********************* Home hero  Section starts *****************************************************/
 .home {
   min-height: 100vh;
   display: flex;
@@ -309,7 +336,7 @@ header .fa-bars {
   object-fit: cover;
   z-index: -1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  filter: brightness(40%);
+  filter: brightness(80%);
 }
 
 .home .content {
@@ -317,7 +344,8 @@ header .fa-bars {
 }
 
 .home .content h1 {
-  font-size: 6.1vw;
+  font-size: 3.5vw;
+  font-family: var(--kalam-font);
   color: #fff;
   text-shadow: 0 0.3rem 0.5rem #000;
 }
@@ -340,14 +368,14 @@ header .fa-bars {
 }
 
 .home .form-container form h3 {
-  color: #333;
-  font-size: 3rem;
+  color: var(--color-secondary);
+  font-size: 2.5rem;
   text-align: center;
 }
 
 .home .form-container form span {
-  color: #0098a1;
-  font-size: 2.5rem;
+  color: var(--color-primary);
+  font-size: 1.6rem;
   margin: 0.5rem 0;
   display: block;
 }
@@ -360,7 +388,7 @@ header .fa-bars {
   background: #eee;
   border: none;
   outline: none;
-  color: #333;
+  color: var(--color-secondary);
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3) inset;
   border-radius: 0.5rem;
 }
@@ -368,7 +396,7 @@ header .fa-bars {
 .home .form-container form input[type="submit"] {
   width: 10rem;
   color: #fff;
-  background: #0098a1;
+  background: var(--color-primary);
   cursor: pointer;
   font-size: 2rem;
   margin-top: 2rem;
@@ -376,16 +404,19 @@ header .fa-bars {
 }
 
 .home .form-container form input[type="submit"]:hover {
-  border: 0.2rem solid #0098a1;
-  color: #0098a1;
+  border: 0.2rem solid var(--color-primary);
+  color: var(--color-primary);
   background: none;
 }
 
 .stars i {
   padding: 0 0.2rem;
-  color: #0098a1;
+  color: var(--color-primary);
 }
 
+/********************* Home hero  Section ends *****************************************************/
+
+/********************* Feature Section Starts *****************************************************/
 .feature {
   min-height: 100vh;
   background: rgb(2, 0, 36);
@@ -433,13 +464,13 @@ header .fa-bars {
 }
 
 .feature .card-container .content .title {
-  color: #0098a1;
+  color: var(--color-primary);
   padding-top: 7px;
   font-size: 3rem;
 }
 
 .feature .card-container .content p {
-  color: #333;
+  color: var(--color-secondary);
   font-size: 1.3rem;
   padding: 1rem;
 }
@@ -458,7 +489,7 @@ header .fa-bars {
   border-radius: 0.5rem;
   outline: none;
   border: none;
-  background: #0098a1;
+  background: var(--color-primary);
   color: #fff;
   cursor: pointer;
   transition: 0.2s linear;
@@ -466,8 +497,8 @@ header .fa-bars {
 
 .feature .card-container .content .btn:hover {
   background: none;
-  border: 0.2rem solid #0098a1;
-  color: #0098a1;
+  border: 0.2rem solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 .feature .card-container .card .discount {
@@ -482,6 +513,12 @@ header .fa-bars {
   line-height: 4rem;
   text-align: center;
   font-size: 2rem;
+}
+/********************* Feature Section ends *****************************************************/
+
+.card:hover{
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
 #groupTour {
@@ -520,12 +557,12 @@ header .fa-bars {
 
 .about .row .content h3 {
   font-size: 3.5rem;
-  color: #0098a1;
+  color: var(--color-primary);
 }
 
 .about .row .content p {
   font-size: 1.6rem;
-  color: #333;
+  color: var(--color-secondary);
 }
 
 .about .row .content .btn {
@@ -537,15 +574,15 @@ header .fa-bars {
   width: 18rem;
   margin-top: 1rem;
   color: #fff;
-  background: #0098a1;
+  background: var(--color-primary);
   font-size: 2rem;
 }
 
 .about .row .content .btn1,
 .about .row .content .btn:hover {
   background: none;
-  color: #0098a1;
-  border: 0.2rem solid #0098a1;
+  color: var(--color-primary);
+  border: 0.2rem solid var(--color-primary);
   margin-right: 1rem;
 }
 
@@ -555,7 +592,7 @@ header .fa-bars {
 }
 .whyUs h3 {
   font-size: 2.5rem;
-  color: #0098a1;
+  color: var(--color-primary);
 }
 .whyUs p {
   font-size: 1.4rem;
@@ -563,11 +600,11 @@ header .fa-bars {
 }
 
 .money {
-  color: #0098a1;
+  color: var(--color-primary);
 }
 .money-line-through {
   text-decoration: line-through;
-  color: #333;
+  color: var(--color-secondary);
 }
 
 .gallery {
@@ -603,7 +640,7 @@ header .fa-bars {
   position: absolute;
   top: 120%;
   left: 0;
-  background: linear-gradient(transparent, #333);
+  background: linear-gradient(transparent, var(--color-secondary));
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -626,7 +663,7 @@ header .fa-bars {
 }
 
 .gallery .box-container .box .icons a:hover {
-  color: #0098a1;
+  color: var(--color-primary);
 }
 
 /* Hotel Detalis Page */
@@ -646,18 +683,18 @@ header .fa-bars {
 }
 
 .details-nav a {
-  color: #333;
+  color: var(--color-secondary);
   font-size: 2rem;
 }
 .details-nav a:active {
-  color: #0098a1;
+  color: var(--color-primary);
 }
 .details-nav a:hover {
-  color: #0098a1;
+  color: var(--color-primary);
 }
 
 .details-card span {
-  color: #0098a1;
+  color: var(--color-primary);
 }
 .details-card .card-title {
   font-size: 3.2rem;
@@ -688,7 +725,7 @@ header .fa-bars {
 
 .review {
   background: url(../images/review-bg.jpg),
-    linear-gradient(#0098a1, #0098a1) no-repeat;
+    linear-gradient(var(--color-primary), var(--color-primary)) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -733,12 +770,12 @@ header .fa-bars {
 
 .review .box-container .box .content h3 {
   font-size: 2rem;
-  color: #0098a1;
+  color: var(--color-primary);
 }
 
 .review .box-container .box .content p {
   font-size: 1.4rem;
-  color: #333;
+  color: var(--color-secondary);
   padding: 0.5rem 1.5rem;
 }
 
@@ -774,11 +811,11 @@ header .fa-bars {
 
 .contact .row .contact-info .box h3 {
   font-size: 2rem;
-  color: #333;
+  color: var(--color-secondary);
 }
 
 .contact .row .contact-info .box h3 i {
-  color: #0098a1;
+  color: var(--color-primary);
 }
 
 .contact .row .contact-info .box p {
@@ -794,7 +831,7 @@ header .fa-bars {
 .contact .row .contact-form-container h3 {
   font-size: 4rem;
   padding-top: 4rem;
-  color: #0098a1;
+  color: var(--color-primary);
 }
 
 .contact .row .contact-form-container .inputBox {
@@ -812,13 +849,13 @@ header .fa-bars {
   text-align: center;
   margin: 5px 0 0 0;
   font-size: 1.4rem;
-  color: #0098a1;
+  color: var(--color-primary);
 }
 
 .contact .row .contact-form-container form input,
 textarea {
   outline: none;
-  border: 0.2rem solid #0098a1;
+  border: 0.2rem solid var(--color-primary);
   height: 4rem;
   background: #fff;
   padding: 0 1rem;
@@ -834,8 +871,8 @@ textarea {
 }
 
 .contact .row .contact-form-container form input[type="submit"] {
-  color: #0098a1;
-  border: 0.2rem solid #0098a1;
+  color: var(--color-primary);
+  border: 0.2rem solid var(--color-primary);
   cursor: pointer;
   transition: 0.2s;
   width: 20rem;
@@ -843,7 +880,7 @@ textarea {
 
 .contact .row .contact-form-container form input[type="submit"]:hover {
   color: #fff;
-  background: #0098a1;
+  background: var(--color-primary);
 }
 
 
@@ -909,7 +946,7 @@ textarea {
 .newsletter form input[type="submit"] {
   width: 20rem;
   color: #fff;
-  background: #0098a1;
+  background: var(--color-primary);
   font-size: 2rem;
   cursor: pointer;
   margin-left: -1.1rem;
@@ -957,7 +994,7 @@ textarea {
 }
 
 .footer .icons a:hover {
-  background: #0098a1;
+  background: var(--color-primary);
 }
 
 /* media queries  */
