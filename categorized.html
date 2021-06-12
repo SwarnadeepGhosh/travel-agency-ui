@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All - Accoladestravelcations</title>
+    <title>Categorized view - Accoladestravelcations</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
 
     <!-- font awesome cdn file link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
@@ -23,7 +22,7 @@
 
     <header>
 
-        <a href="#" class="logo"><span>Accoladestravelcations</span> Pvt Ltd</a>
+        <a href="./index.html" class="logo"><span>Accoladestravelcations</span> Pvt Ltd</a>
 
         <nav class="navbar">
             <ul>
@@ -32,7 +31,7 @@
                 <li><a data-scroll="about" href="./about.html#about">about</a></li>
                 <li><a data-scroll="" href="./plans.html">plans</a></li>
                 <li><a data-scroll="review" href="./index.html#review">reviews</a></li>
-                <li><a data-scroll="contact" href="contact.html">contact</a></li>
+                <li><a data-scroll="contact" href="contact.html#contact">contact</a></li>
             </ul>
         </nav>
 
@@ -52,7 +51,7 @@
         </div>
 
         <div class="content">
-            <h1>Explore and Book best Hotels, Resorts and Home Stays.</h1>
+            <h1>Find your dream destination in a categorized way</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod necessitatibus sunt atque consequuntur
                 quam veniam magnam consectetur, odio velit alias!</p>
         </div>
@@ -83,303 +82,212 @@
 
     <!-- home section ends -->
 
-    <!-- feature section starts  -->
 
-    <section class="feature" id="feature">
+    <!-- Categorized deals Starts -->
 
-        <h1 class="heading"><span>f</span>eatured <span>l</span>ocations</h1>
+    <section id="categorized" class="gallery pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="heading"><span>S</span>earch <span>R</span>esults</h1>
+                    <div class="card my-3" style="width: 100%;">
+                        <div class="card-body">
+                            <ul class="nav nav-pills nav-fill my-3" style="background-color: rgb(36, 36, 36);">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Our Top Picks</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Hotels</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Resorts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home Stays</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Most Visited</a>
+                                </li>
+                            </ul>
 
-        <div class="card-container">
 
-            <div class="card">
-                <span class="discount">-35%</span>
-                <img src="images/card1.jpg" alt="">
-                <div class="content">
-                    <h3 class="title">hawaii</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi consequuntur ea molestias
-                        illo. Porro error facilis obcaecati. Quisquam, placeat.</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                            <div class="container mt-5 mb-1">
+                                <div class="d-flex justify-content-center row">
+                                    <div class="col-md-12">
+
+                                        <div class="row mb-2 p-2 bg-white border rounded room-card">
+                                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                                            <div class="col-md-6 mt-1">
+                                                <h5  style="font-size: 2.5rem;">ITC Royal Bengal, Kolkata</h5>
+                                                <div class="d-flex flex-row">
+                                                    <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                                                </div>
+                                                <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                                                <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                                            </div>
+                                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                                <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price Starting From</h6>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                                                    <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                                                </div>
+
+                                                <div class="d-flex flex-column mt-4">
+                                                    <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                                                </div>
+
+                                                <div class="d-flex flex-column mt-4">
+                                                    <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-2 p-2 bg-white border rounded room-card">
+                                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                                            <div class="col-md-6 mt-1">
+                                                <h5  style="font-size: 2.5rem;">ITC Royal Bengal, Kolkata</h5>
+                                                <div class="d-flex flex-row">
+                                                    <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                                                </div>
+                                                <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                                                <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                                            </div>
+                                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                                <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price Starting From</h6>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                                                    <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                                                </div>
+
+                                                <div class="d-flex flex-column mt-4">
+                                                    <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                                                </div>
+
+                                                <div class="d-flex flex-column mt-4">
+                                                    <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-2 p-2 bg-white border rounded room-card">
+                                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                                            <div class="col-md-6 mt-1">
+                                                <h5  style="font-size: 2.5rem;">ITC Royal Bengal, Kolkata</h5>
+                                                <div class="d-flex flex-row">
+                                                    <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                                                </div>
+                                                <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                                                <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                                            </div>
+                                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                                <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price Starting From</h6>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                                                    <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                                                </div>
+
+                                                <div class="d-flex flex-column mt-4">
+                                                    <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                                                </div>
+
+                                                <div class="d-flex flex-column mt-4">
+                                                    <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-2 p-2 bg-white border rounded room-card">
+                                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                                            <div class="col-md-6 mt-1">
+                                                <h5  style="font-size: 2.5rem;">ITC Royal Bengal, Kolkata</h5>
+                                                <div class="d-flex flex-row">
+                                                    <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                                                </div>
+                                                <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                                                <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                                            </div>
+                                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                                <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price Starting From</h6>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                                                    <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                                                </div>
+
+                                                <div class="d-flex flex-column mt-4">
+                                                    <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                                                </div>
+
+                                                <div class="d-flex flex-column mt-4">
+                                                    <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-2 p-2 bg-white border rounded room-card">
+                                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                                            <div class="col-md-6 mt-1">
+                                                <h5  style="font-size: 2.5rem;">ITC Royal Bengal, Kolkata</h5>
+                                                <div class="d-flex flex-row">
+                                                    <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                                                </div>
+                                                <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                                                <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                                            </div>
+                                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                                <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price Starting From</h6>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                                                    <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                                                </div>
+
+                                                <div class="d-flex flex-column mt-4">
+                                                    <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                                                </div>
+
+                                                <div class="d-flex flex-column mt-4">
+                                                    <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                       
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <nav aria-label="Page navigation example" class="my-2 py-2">
+                                <ul class="pagination justify-content-end">
+                                  <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                  </li>
+                                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
                     </div>
-                    <a href="#"><button class="btn">check out!</button></a>
+
                 </div>
             </div>
-
-            <div class="card">
-                <img src="images/card2.jpg" alt="">
-                <div class="content">
-                    <h3 class="title">egypt</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi consequuntur ea molestias
-                        illo. Porro error facilis obcaecati. Quisquam, placeat.</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#"><button class="btn">check out!</button></a>
-                </div>
-            </div>
-
-            <div class="card">
-                <span class="discount">-45%</span>
-                <img src="images/card3.jpg" alt="">
-                <div class="content">
-                    <h3 class="title">india</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi consequuntur ea molestias
-                        illo. Porro error facilis obcaecati. Quisquam, placeat.</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#"><button class="btn">check out!</button></a>
-                </div>
-            </div>
-
         </div>
-
     </section>
 
-
-    <!-- feature section ends -->
-    <!-- about section starts  -->
-
-    <section id="about" class="about">
-
-        <h1 class="heading"><span>a</span>bout <span>u</span>s</h1>
-
-        <div class="row">
-
-            <div class="image">
-                <img src="images/about-img.svg" alt="">
-            </div>
-
-            <div class="content">
-                <h3>why choose us?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam aut tenetur quaerat omnis
-                    perferendis nesciunt quidem odit quod! Ex excepturi temporibus iste assumenda, odio magnam
-                    laudantium minus asperiores distinctio!</p><br>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, itaque.</p>
-                <a href="#"><button class="btn btn1">read more</button></a>
-                <a href="#"><button class="btn">get started</button></a>
-            </div>
-
-        </div>
-
-    </section>
+    <!-- Categorized Deals Ends -->
 
 
-    <!-- about section ends -->
-    <!-- gallery section starts  -->
-
-    <section id="gallery" class="gallery">
-
-        <h1 class="heading"><span>g</span>allery</h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="images/img1.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/img2.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/img3.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/img4.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/img5.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/img6.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- gallery section ends -->
-
-    <!-- review section starts  -->
-
-    <section id="review" class="review">
-
-        <h1 class="heading"><span>r</span>eview</h1>
-
-
-        <div class="box-container">
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/pic1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>someone's name</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque
-                        sequi in asperiores ea, nisi ullam?</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/pic2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>someone's name</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque
-                        sequi in asperiores ea, nisi ullam?</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/pic3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>someone's name</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque
-                        sequi in asperiores ea, nisi ullam?</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- review section ends -->
-
-    <!-- contact section starts  -->
-
-    <section id="contact" class="contact">
-
-        <h1 class="heading"><span>c</span>ontact <span>u</span>s</h1>
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.960043043403!2d72.85186461442511!3d19.109408755888396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8348740e791%3A0xe302e2dd9ab8bae2!2sTravels%20Booking%20Office!5e0!3m2!1sen!2sin!4v1609421049401!5m2!1sen!2sin"
-            width="100%" height="300" frameborder="0" style="border:0; outline:none;" allowfullscreen=""
-            aria-hidden="false" tabindex="0"></iframe>
-
-        <div class="row">
-
-            <div class="contact-info">
-
-                <div class="box">
-                    <h3> <i class="fas fa-home"></i> address </h3>
-                    <p>mumbai, <br>
-                        maharashtra, <br>
-                        400104.</p>
-                </div>
-
-                <div class="box">
-                    <h3> <i class="fas fa-envelope"></i> e-mail </h3>
-                    <p>xyz@gmail.com</p>
-                </div>
-
-                <div class="box">
-                    <h3> <i class="fas fa-phone"></i> phone </h3>
-                    <p>+123 4567 890</p>
-                </div>
-
-            </div>
-
-            <div class="contact-form-container">
-
-                <form action="">
-
-                    <h3>get in touch</h3>
-
-                    <div class="inputBox">
-                        <input type="text" placeholder="full name">
-                        <input type="email" placeholder="e-mail">
-                    </div>
-
-                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
-
-                    <input type="submit" value="message">
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- contact section ends -->
+    <!-- Footer section starts -->
 
     <section class="newsletter">
 
-        <h1>sign up 25% discount</h1>
+        <h1>Get Access to Exclusive Deals</h1>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident saepe vel pariatur incidunt libero
-            quo nisi ratione. Ea, corporis.</p>
+        <p>Sign up and we'll send the best deals to you.</p>
 
         <form action="">
             <input type="email" placeholder="enter your email">
@@ -388,28 +296,33 @@
 
     </section>
 
+
     <section class="footer">
 
-        <h1 class="credit">Developed by <span>Swarnadeep</span> on behalf of <span>Accoladestravelcations </span>| all
+        <h1 class="credit">Developed by <a href="https://swarnadeepghosh.github.io/"><span>Swarnadeep</span></a> | on
+            behalf of <span>Accoladestravelcations </span>| all
             rights reserved.</h1>
 
         <div class="icons">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="far fa-envelope"></a>
             <a href="#" class="fab fa-github"></a>
         </div>
 
     </section>
+
+    <!-- Footer section ends -->
 
 
 
 
     <!-- jquery cdn link  -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/main.js"></script>

@@ -807,6 +807,14 @@ header .fa-bars {
   width: 49%;
 }
 
+.inputBox p{
+  width: 49%;
+  text-align: center;
+  margin: 5px 0 0 0;
+  font-size: 1.4rem;
+  color: #0098a1;
+}
+
 .contact .row .contact-form-container form input,
 textarea {
   outline: none;
@@ -837,6 +845,23 @@ textarea {
   color: #fff;
   background: #0098a1;
 }
+
+
+/* Categorized Page  Starts */
+#categorized a{
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#categorized .nav-pills a{
+  color: white;
+}
+#categorized .nav-pills a:hover{
+  color: #d9ff02;
+}
+
+
+/* Categorized Page  Ends */
 
 .newsletter {
   padding: 6rem;
@@ -896,6 +921,8 @@ textarea {
   color: #fff;
   background: none;
 }
+
+
 
 .footer {
   display: flex;
