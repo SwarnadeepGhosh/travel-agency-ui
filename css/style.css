@@ -359,7 +359,7 @@ header .fa-bars {
 }
 
 .home .form-container form {
-  margin-top: 8rem;
+  margin-top: 4rem;
   padding: 2rem;
   width: 40rem;
   background-color: #fff;
@@ -391,6 +391,10 @@ header .fa-bars {
   color: var(--color-secondary);
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3) inset;
   border-radius: 0.5rem;
+}
+.home .form-container form input:focus {
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
 .home .form-container form input[type="submit"] {
