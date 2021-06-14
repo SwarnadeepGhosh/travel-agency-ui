@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorized view - Accoladestravelcations</title>
+    <title>Hotels, Home Stay, Holiday - Accoladestravelcations</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
 
     <!-- font awesome cdn file link  -->
@@ -17,29 +17,99 @@
 </head>
 
 <body>
+  
+  <!--Cancellation Modal starts -->
+  <div class="modal fade" id="cancellationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Booking Cancellation Request</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label class="sr-only" for="inlineFormInputGroup">Booking Id</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-portrait"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Booking Id">
+            </div>
+
+            <label class="sr-only" for="inlineFormInputGroup">Mobile Number</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-phone-square-alt"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Mobile Number">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Cancellation Modal ends -->
 
     <!-- header section starts  -->
 
     <header>
 
-        <a href="./index.html" class="logo"><span>Accoladestravelcations</span> Pvt Ltd</a>
+        <a href="./index.html" class="logo">
+            <img src="./images/header-logo.jpg" class="img-fluid" alt="Responsive image">
+            <span>Accoladestravelcations</span>
+        </a>
 
         <nav class="navbar">
             <ul>
-                <li><a data-scroll="home" href="./index.html" class="active">home</a></li>
-                <li><a data-scroll="feature" href="./index.html#feature">featured</a></li>
-                <li><a data-scroll="about" href="./about.html#about">about</a></li>
-                <li><a data-scroll="" href="./plans.html">plans</a></li>
-                <li><a data-scroll="review" href="./index.html#review">reviews</a></li>
-                <li><a data-scroll="contact" href="contact.html#contact">contact</a></li>
+                <li><a href="./index.html" class="active"><i class="fas fa-home"></i> HOME</a></li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-hotel"></i> HOTELS</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./hotels.html">Hotels</a>
+                        <a class="dropdown-item" href="./homestay.html">Home Stays</a>
+                        <a class="dropdown-item" href="./resorts.html">Resorts</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-umbrella-beach"></i> HOLIDAY</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./holiday.html">Holiday Package</a>
+                        <a class="dropdown-item" href="./honeymoon.html">Honeymoon Package</a>
+                        <a class="dropdown-item" href="./festive.html">Festive Package</a>
+                        <a class="dropdown-item" href="./vacation.html">Vacation Package</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        MORE <i class="fas fa-plus"></i></a>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./about.html#about"><i class="fas fa-info-circle"></i> About</a>
+                        <a class="dropdown-item" href="./contact.html#contact"><i class="fas fa-phone-alt"></i> Contact</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#cancellationModal"><i class="fas fa-exclamation-triangle"></i> Cancellation</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-check-circle"></i> Terms & Conditions</a>
+                    </div>
+                </li>
+                
+
             </ul>
         </nav>
 
         <div class="fas fa-bars"></div>
 
+
     </header>
 
     <!-- header section ends -->
+
 
     <!-- home section starts  -->
 
@@ -47,272 +117,335 @@
 
         <div class="video">
             <!--<video src="images/video.mp4" loop muted autoplay></video>-->
-            <img src="./images/hero.jpg" alt="Girl in a jacket" width="100vw">
+            <img src="./images/hero.jpg" alt="Company Tagline" width="100vw">
         </div>
 
         <div class="content">
-            <h1>Find your dream destination in a categorized way</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod necessitatibus sunt atque consequuntur
-                quam veniam magnam consectetur, odio velit alias!</p>
+            <h1>Explore Best Hotels <br> according to Locations</h1>
         </div>
 
-        <div class="form-container">
-            <form action="">
-
-                <h3>search your destination</h3>
-
-                <span>location</span>
-                <input type="text" placeholder="place you want to visit">
-
-                <span>guest members</span>
-                <input type="number" placeholder="number of peoples">
-
-                <span>arrival</span>
-                <input type="date">
-
-                <span>leaving</span>
-                <input type="date">
-
-                <input type="submit" value="search">
-
-            </form>
-        </div>
 
     </section>
 
     <!-- home section ends -->
 
+    <!-- search section starts -->
 
-    <!-- Categorized deals Starts -->
-
-    <section id="categorized" class="gallery pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="heading"><span>S</span>earch <span>R</span>esults</h1>
-                    <div class="card my-3" style="width: 100%;">
-                        <div class="card-body">
-                            <ul class="nav nav-pills nav-fill my-3" style="background-color: rgb(36, 36, 36);">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">Our Top Picks</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Hotels</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Resorts</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Home Stays</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Most Visited</a>
-                                </li>
-                            </ul>
-
-
-                            <div class="container mt-5 mb-1">
-                                <div class="d-flex justify-content-center row">
-                                    <div class="col-md-12">
-
-                                        <div class="row mb-2 p-2 bg-white border rounded room-card">
-                                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
-                                            <div class="col-md-6 mt-1">
-                                                <h5  style="font-size: 2.5rem;">ITC Royal Bengal, Kolkata</h5>
-                                                <div class="d-flex flex-row">
-                                                    <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
-                                                </div>
-                                                <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
-                                                <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
-                                            </div>
-                                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                                                <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price Starting From</h6>
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
-                                                    <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
-                                                </div>
-
-                                                <div class="d-flex flex-column mt-4">
-                                                    <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
-                                                </div>
-
-                                                <div class="d-flex flex-column mt-4">
-                                                    <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-2 p-2 bg-white border rounded room-card">
-                                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
-                                            <div class="col-md-6 mt-1">
-                                                <h5  style="font-size: 2.5rem;">ITC Royal Bengal, Kolkata</h5>
-                                                <div class="d-flex flex-row">
-                                                    <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
-                                                </div>
-                                                <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
-                                                <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
-                                            </div>
-                                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                                                <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price Starting From</h6>
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
-                                                    <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
-                                                </div>
-
-                                                <div class="d-flex flex-column mt-4">
-                                                    <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
-                                                </div>
-
-                                                <div class="d-flex flex-column mt-4">
-                                                    <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-2 p-2 bg-white border rounded room-card">
-                                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
-                                            <div class="col-md-6 mt-1">
-                                                <h5  style="font-size: 2.5rem;">ITC Royal Bengal, Kolkata</h5>
-                                                <div class="d-flex flex-row">
-                                                    <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
-                                                </div>
-                                                <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
-                                                <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
-                                            </div>
-                                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                                                <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price Starting From</h6>
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
-                                                    <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
-                                                </div>
-
-                                                <div class="d-flex flex-column mt-4">
-                                                    <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
-                                                </div>
-
-                                                <div class="d-flex flex-column mt-4">
-                                                    <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-2 p-2 bg-white border rounded room-card">
-                                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
-                                            <div class="col-md-6 mt-1">
-                                                <h5  style="font-size: 2.5rem;">ITC Royal Bengal, Kolkata</h5>
-                                                <div class="d-flex flex-row">
-                                                    <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
-                                                </div>
-                                                <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
-                                                <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
-                                            </div>
-                                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                                                <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price Starting From</h6>
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
-                                                    <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
-                                                </div>
-
-                                                <div class="d-flex flex-column mt-4">
-                                                    <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
-                                                </div>
-
-                                                <div class="d-flex flex-column mt-4">
-                                                    <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-2 p-2 bg-white border rounded room-card">
-                                            <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
-                                            <div class="col-md-6 mt-1">
-                                                <h5  style="font-size: 2.5rem;">ITC Royal Bengal, Kolkata</h5>
-                                                <div class="d-flex flex-row">
-                                                    <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
-                                                </div>
-                                                <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
-                                                <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
-                                            </div>
-                                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                                                <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Price Starting From</h6>
-                                                <div class="d-flex flex-row align-items-center">
-                                                    <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
-                                                    <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
-                                                </div>
-
-                                                <div class="d-flex flex-column mt-4">
-                                                    <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
-                                                </div>
-
-                                                <div class="d-flex flex-column mt-4">
-                                                    <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                       
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <nav aria-label="Page navigation example" class="my-2 py-2">
-                                <ul class="pagination justify-content-end">
-                                  <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                  </li>
-                                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                  </li>
-                                </ul>
-                              </nav>
-                        </div>
+    <div id="searchbar" class="s002">
+        <form>
+            <!--<fieldset>
+                <legend><span>S</span>EARCH <span>H</span>OTEL</legend>
+            </fieldset>-->
+            <div class="inner-form">
+                <div class="input-field first-wrap">
+                    <div class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                            </path>
+                        </svg>
                     </div>
-
+                    <input id="search" type="text" placeholder="Enter location" />
+                </div>
+                <div class="input-field second-wrap">
+                    <div class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input type="text" placeholder="Checkin" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                </div>
+                <div class="input-field third-wrap">
+                    <div class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input type="text" placeholder="Checkout" onfocus="(this.type='date')" onblur="(this.type='text')" />
+                    <!--  class="datepicker" id="return" ,, id="depart" for checkin-->
+                </div>
+                <div class="input-field fouth-wrap">
+                    <div class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                    </div>
+                    <!--<select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="">2 Adults</option>
+                    <option>3 Adults</option>
+                    <option>4 Adults</option>
+                    <option>5 Adults</option>
+                  </select>-->
+                    <input id="search" type="tel" placeholder="Mobile Number" />
+                </div>
+                <div class="input-field fifth-wrap">
+                    <button class="btn-search" type="button">SEARCH</button>
                 </div>
             </div>
+        </form>
+    </div>
+    <!-- search section ends -->
+
+
+    <section id="searchResults" class="searchResults pb-5">
+        <div class="container">
+            <h1 class="heading"><span>D</span>arjeeling <span>H</span>otels</h1>
+
+            <div class="row mb-2 p-2 bg-white border rounded room-card">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                <div class="col-md-6 mt-1">
+                    <h5  style="font-size: 2.5rem;">Hotel Dolphin, Darjeeling</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Starting Room Price Per Night</h6>
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                        <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2 p-2 bg-white border rounded room-card">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                <div class="col-md-6 mt-1">
+                    <h5  style="font-size: 2.5rem;">Hotel Dolphin, Darjeeling</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Starting Room Price Per Night</h6>
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                        <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-2 p-2 bg-white border rounded room-card">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                <div class="col-md-6 mt-1">
+                    <h5  style="font-size: 2.5rem;">Hotel Dolphin, Darjeeling</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Starting Room Price Per Night</h6>
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                        <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-2 p-2 bg-white border rounded room-card">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                <div class="col-md-6 mt-1">
+                    <h5  style="font-size: 2.5rem;">Hotel Dolphin, Darjeeling</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Starting Room Price Per Night</h6>
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                        <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-2 p-2 bg-white border rounded room-card">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                <div class="col-md-6 mt-1">
+                    <h5  style="font-size: 2.5rem;">Hotel Dolphin, Darjeeling</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Starting Room Price Per Night</h6>
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                        <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-2 p-2 bg-white border rounded room-card">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                <div class="col-md-6 mt-1">
+                    <h5  style="font-size: 2.5rem;">Hotel Dolphin, Darjeeling</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Starting Room Price Per Night</h6>
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                        <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-2 p-2 bg-white border rounded room-card">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                <div class="col-md-6 mt-1">
+                    <h5  style="font-size: 2.5rem;">Hotel Dolphin, Darjeeling</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Starting Room Price Per Night</h6>
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                        <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-2 p-2 bg-white border rounded room-card">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./images/room1.jpg"></div>
+                <div class="col-md-6 mt-1">
+                    <h5  style="font-size: 2.5rem;">Hotel Dolphin, Darjeeling</h5>
+                    <div class="d-flex flex-row">
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i></div><span>310</span>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span>Free Wifi</span><span class="dot"></span><span>Parking System</span><span class="dot"></span><span>CCTV Cameras<br></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Complimentary Breakfast</span><span class="dot"></span><span>Card Payment</span><span class="dot"></span><span>Power Backup</div>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <h6 class="text-secondary text-center" style="font-size: 1.3rem;">Starting Room Price Per Night</h6>
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-3"><i class="fas fa-rupee-sign"></i> 1764.00</h4>
+                        <span class="strike-text"><i class="fas fa-rupee-sign"></i> 2379.00</span>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-outline-primary" href="./detail.html" role="button" style="font-size: 1.8rem;">View Details</a>
+                    </div>
+
+                    <div class="d-flex flex-column mt-4">
+                        <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 1.8rem;">Quick Enquiry</a>
+                    </div>
+                </div>
+            </div>
+            
+            
         </div>
     </section>
-
-    <!-- Categorized Deals Ends -->
 
 
     <!-- Footer section starts -->
-
+    
     <section class="newsletter">
-
-        <h1>Get Access to Exclusive Deals</h1>
-
-        <p>Sign up and we'll send the best deals to you.</p>
-
-        <form action="">
-            <input type="email" placeholder="enter your email">
-            <input type="submit" value="sign up">
-        </form>
-
+    
+        <h1>Have some Doubt ?</h1>
+    
+        <p>Call us on : +91 8017 013 434</p>
+    
+        <div class="container" style="max-width: 35rem;">
+            <a class="btn btn-primary btn-grad" href="./contact.html#enquiry" role="button">Submit a Query</a>
+        </div>
+    
     </section>
-
-
+    
     <section class="footer">
-
-        <h1 class="credit">Developed by <a href="https://swarnadeepghosh.github.io/"><span>Swarnadeep</span></a> | on
-            behalf of <span>Accoladestravelcations </span>| all
-            rights reserved.</h1>
-
+    
+        <h1 class="credit">Developed by <a href="#"><span>Acs. Pvt Ltd</span></a> | on behalf of
+            <span>Accoladestravelcations Pvt Ltd. </span>| all rights reserved.
+        </h1>
+    
         <div class="icons">
             <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="far fa-envelope"></a>
-            <a href="#" class="fab fa-github"></a>
+            <a href="#" class="fab fa-youtube"></a>
         </div>
-
+    
     </section>
-
+    
     <!-- Footer section ends -->
 
 
@@ -320,9 +453,11 @@
 
     <!-- jquery cdn link  -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/extention/choices.js"></script>
+    <script src="js/extention/flatpickr.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/main.js"></script>

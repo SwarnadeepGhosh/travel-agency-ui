@@ -19,26 +19,98 @@
 
 <body>
 
+  <!--Cancellation Modal starts -->
+  <div class="modal fade" id="cancellationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Booking Cancellation Request</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label class="sr-only" for="inlineFormInputGroup">Booking Id</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-portrait"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Booking Id">
+            </div>
+
+            <label class="sr-only" for="inlineFormInputGroup">Mobile Number</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-phone-square-alt"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Mobile Number">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Cancellation Modal ends -->
+
     <!-- header section starts  -->
+
     <header>
 
-        <a href="./index.html" class="logo"><span>Accoladestravelcations</span> Pvt Ltd</a>
+        <a href="./index.html" class="logo">
+            <img src="./images/header-logo.jpg" class="img-fluid" alt="Responsive image">
+            <span>Accoladestravelcations</span>
+        </a>
 
         <nav class="navbar">
             <ul>
-                <li><a data-scroll="home" href="./index.html">home</a></li>
-                <li><a data-scroll="feature" href="./index.html#feature">featured</a></li>
-                <li><a data-scroll="about" href="./about.html#about" class="active">about</a></li>
-                <li><a data-scroll="" href="./plans.html">plans</a></li>
-                <li><a data-scroll="review" href="./index.html#review">reviews</a></li>
-                <li><a data-scroll="contact" href="contact.html#contact">contact</a></li>
+                <li><a href="./index.html" class="active"><i class="fas fa-home"></i> HOME</a></li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-hotel"></i> HOTELS</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./hotels.html">Hotels</a>
+                        <a class="dropdown-item" href="./homestay.html">Home Stays</a>
+                        <a class="dropdown-item" href="./resorts.html">Resorts</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-umbrella-beach"></i> HOLIDAY</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./holiday.html">Holiday Package</a>
+                        <a class="dropdown-item" href="./honeymoon.html">Honeymoon Package</a>
+                        <a class="dropdown-item" href="./festive.html">Festive Package</a>
+                        <a class="dropdown-item" href="./vacation.html">Vacation Package</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        MORE <i class="fas fa-plus"></i></a>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./about.html#about"><i class="fas fa-info-circle"></i> About</a>
+                        <a class="dropdown-item" href="./contact.html#contact"><i class="fas fa-phone-alt"></i> Contact</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#cancellationModal"><i class="fas fa-exclamation-triangle"></i> Cancellation</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-check-circle"></i> Terms & Conditions</a>
+                    </div>
+                </li>
+                
+
             </ul>
         </nav>
 
         <div class="fas fa-bars"></div>
 
+
     </header>
+
     <!-- header section ends -->
+
 
     <!-- home section starts  -->
 
@@ -46,31 +118,82 @@
 
         <div class="video">
             <!--<video src="images/video.mp4" loop muted autoplay></video>-->
-            <img src="./images/hero.jpg" alt="Girl in a jacket" width="100vw">
+            <img src="./images/hero.jpg" alt="Company Tagline" width="100vw">
         </div>
 
         <div class="content">
-            <h1>Know better About the company</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod necessitatibus sunt atque consequuntur
-                quam veniam magnam consectetur, odio velit alias!</p>
+            <h1>Know About Us Better</h1>
         </div>
 
         <div class="form-container">
-            <form action="">
+            <form autocomplete="off" action="">
 
-                <h3>search your destination</h3>
+                <h3>Search your Destination</h3>
 
-                <span>location</span>
-                <input type="text" placeholder="place you want to visit">
+                <span>Location / Hotel Name</span>
+                <input type="text" placeholder="Place or Hotel Name you want to visit">
 
-                <span>guest members</span>
-                <input type="number" placeholder="number of peoples">
+                <span>Number of Rooms</span>
 
-                <span>arrival</span>
-                <input type="date">
+                <div class="roompopup">
+                    <div class="message" id="popmessg">
 
-                <span>leaving</span>
-                <input type="date">
+                        <input type="hidden" id="totaloffqty" value="1">
+
+                        <div class="mainwidth">
+                            <p class="hints" style="color:#000;">Adult: 12+ / Child: 4+</p>
+                            <p class="input_fields_wrap">
+                                <span>
+
+                                    <select class="form-control useronename">
+                                        <option value="">-- Adult --</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+
+
+                                    <select class="form-control useronephone">
+                                        <option value="">-- Child --</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+
+                                </span>
+                            <div class="clearfix"></div>
+
+
+                            </p>
+                            <div class="row">
+                                <div class="col-xs-6 mx-2">
+                                    <div class="adbtn"><a href="#" class="add_field_button">+ Add Room</a></div>
+                                </div>
+
+                                <div class="col-xs-6 mx-2">
+                                    <div class="rmsubmt"><a href="#" id="saveCategories" onClick="closetrnsblc();">Done</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control myfldcls" id="actualresult" name="hmhbroopprsn" placeholder="Room No" onClick="openpop();">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Check in</span><input type="date">
+                    </div>
+                    <div class="col-md-6">
+                        <span>Check Out</span><input type="date">
+                    </div>
+                </div>
+
+                <span>Phone Number</span>
+                <input type="tel" placeholder="Please enter your mobile number">
 
                 <input type="submit" value="search">
 
@@ -87,7 +210,7 @@
 
     <section id="about" class="about">
         <div class="container-fluid about">
-            <h1 class="heading"><span>a</span>bout <span>u</span>s</h1>
+            <h1 class="heading"><span>A</span>BOUT <span>U</span>S</h1>
             <div class="row">
                 <div class="col-md-6">
                     <div class="image text-center">
@@ -96,13 +219,26 @@
                 </div>
                 <div class="col-md-6">
                     <div class="content">
-                        <h3>Generic heading</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam aut tenetur quaerat omnis
-                            perferendis nesciunt quidem odit quod! Ex excepturi temporibus iste assumenda, odio magnam
-                            laudantium minus asperiores distinctio!</p><br>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, itaque.</p>
-                        <a href="#"><button class="btn btn1">read more</button></a>
-                        <a href="#"><button class="btn">get started</button></a>
+                        <h3>Accoladestravelcations Pvt Ltd.</h3>
+                        <p>
+                            Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Quam quisque id diam vel. Pulvinar sapien et ligula ullamcorper malesuada proin.
+                             
+                            <br><br>
+                             Nisl vel pretium lectus quam id leo in. Mollis nunc sed id semper risus in hendrerit. Eget aliquet nibh praesent tristique magna sit amet purus. In hac 
+                             habitasse platea dictumst vestibulum rhoncus est. Mattis enim ut tellus elementum sagittis vitae et. Cursus euismod quis viverra nibh cras pulvinar. 
+                            <br><br>
+
+                            Sollicitudin ac orci phasellus egestas tellus rutrum. Ac ut consequat semper viverra nam libero justo laoreet sit. Convallis aenean et tortor at risus viverra. Cras adipiscing enim eu turpis egestas pretium aenean. Tincidunt augue interdum velit euismod in pellentesque. Sodales ut eu sem integer vitae. Aliquam nulla facilisi cras fermentum odio 
+                            eu feugiat. At urna condimentum mattis pellentesque id nibh. Adipiscing elit duis tristique sollicitudin. Amet facilisis magna etiam tempor orci eu lobortis.
+                        </p>
+                        <a href="#icons"><button class="btn btn1">Connect with us</button></a>
+                        <a href="#"><button class="btn">Submit Enquiry</button></a>
+
+                        <div class="icons py-5" id="icons">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="far fa-envelope"></a>
+                            <a href="#" class="fab fa-youtube"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,96 +247,44 @@
     <!-- about section ends -->
 
 
-    <!-- Why Us section starts  -->
-
-    <section id="whyUs" class="whyUs">
-        <div class="container pb-10">
-            <h1 class="heading">Why <span>Accoladestravelcations</span> ?</h1>
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="./images/whyus1.png" class="rounded" alt="">
-                    <h3 class="title">Low Price</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi consequuntur ea
-                        molestias
-                        illo. Porro error facilis obcaecati. Quisquam, placeat.</p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="./images/whyus2.png" alt="">
-                    <h3 class="title">100% Safe and Secure</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi consequuntur ea
-                        molestias
-                        illo. Porro error facilis obcaecati. Quisquam, placeat.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="./images/whyus3.png" alt="">
-                    <h3 class="title">Leading Travel Company</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi consequuntur ea
-                        molestias
-                        illo. Porro error facilis obcaecati. Quisquam, placeat.</p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="./images/whyus4.png" alt="">
-                    <h3 class="title">Happiness Guaranteed</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi consequuntur ea
-                        molestias
-                        illo. Porro error facilis obcaecati. Quisquam, placeat.</p><br>
-                </div>
-            </div>
-    </section>
-
-    <!-- Why Us section ends -->
-
-
     <!-- Footer section starts -->
-
+    
     <section class="newsletter">
-
-        <h1>Get Access to Exclusive Deals</h1>
-
-        <p>Sign up and we'll send the best deals to you.</p>
-
-        <form action="">
-            <input type="email" placeholder="enter your email">
-            <input type="submit" value="sign up">
-        </form>
-
+    
+        <h1>Have some Doubt ?</h1>
+    
+        <p>Call us on : +91 8017 013 434</p>
+    
+        <div class="container" style="max-width: 35rem;">
+            <a class="btn btn-primary btn-grad" href="./contact.html#enquiry" role="button">Submit a Query</a>
+        </div>
+    
     </section>
-
-
+    
     <section class="footer">
-
-        <h1 class="credit">Developed by <a href="https://swarnadeepghosh.github.io/"><span>Swarnadeep</span></a> |
-            on
-            behalf of <span>Accoladestravelcations </span>| all
-            rights reserved.</h1>
-
+    
+        <h1 class="credit">Developed by <a href="#"><span>Acs. Pvt Ltd</span></a> | on behalf of
+            <span>Accoladestravelcations Pvt Ltd. </span>| all rights reserved.
+        </h1>
+    
         <div class="icons">
             <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="far fa-envelope"></a>
-            <a href="#" class="fab fa-github"></a>
+            <a href="#" class="fab fa-youtube"></a>
         </div>
-
+    
     </section>
-
+    
     <!-- Footer section ends -->
+
 
 
 
     <!-- jquery cdn link  -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/main.js"></script>

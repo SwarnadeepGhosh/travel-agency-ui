@@ -2102,7 +2102,7 @@ a:hover {
 
 .heading {
   color: var(--color-secondary);
-  font-size: 5rem;
+  font-size: 4rem;
   padding: 1rem;
   padding-top: 6rem;
   text-align: center;
@@ -2384,6 +2384,7 @@ header .fa-bars {
 
 .home .content {
   margin-top: 7rem;
+  padding: 0 6rem 0 4rem;
 }
 
 .home .content h1 {
@@ -2582,6 +2583,7 @@ header .fa-bars {
     0 0 8px rgba(102, 175, 233, 0.6);
 }
 
+
 #groupTour {
   min-height: 100vh;
   background: rgb(3, 140, 88);
@@ -2769,10 +2771,25 @@ header .fa-bars {
   font-family: "Poppins", sans-serif;
 }
 .room-card h4 {
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   color: #e60707;
   font-weight: 700;
 }
+
+.room-card:hover{
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--color-primary);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+/*
+.searchResults{
+  background: url(../images/review-bg.jpg), linear-gradient(var(--color-primary), var(--color-primary)) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}*/
 
 #amentities li {
   font-size: 1.4rem;
@@ -3082,6 +3099,28 @@ textarea {
 }
 
 /************************************* Footer ends ***********************************************/
+
+/************************************* About us starts ***********************************************/
+.about .icons a {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 3.5rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--color-primary);
+  border: 0.2rem solid var(--color-primary);
+  transition: 0.2s linear;
+}
+
+.about .icons a:hover {
+  color: var(--color-secondary);
+  background: var(--color-yellow);
+  border: 0.2rem solid var(--color-secondary);
+}
+/************************************* About us ends ***********************************************/
+
 
 
 
