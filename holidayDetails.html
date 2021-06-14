@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Details - Accoladestravelcations</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
+
+    <!-- font awesome cdn file link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!--Cancellation Modal starts -->
+  <div class="modal fade" id="cancellationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Booking Cancellation Request</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label class="sr-only" for="inlineFormInputGroup">Booking Id</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-portrait"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Booking Id">
+            </div>
+
+            <label class="sr-only" for="inlineFormInputGroup">Mobile Number</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-phone-square-alt"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Mobile Number">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Cancellation Modal ends -->
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="./index.html" class="logo">
+            <img src="./images/header-logo.jpg" class="img-fluid" alt="Responsive image">
+            <span>Accoladestravelcations</span>
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html" class="active"><i class="fas fa-home"></i> HOME</a></li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-hotel"></i> HOTELS</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./hotels.html">Hotels</a>
+                        <a class="dropdown-item" href="./homestay.html">Home Stays</a>
+                        <a class="dropdown-item" href="./resorts.html">Resorts</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-umbrella-beach"></i> HOLIDAY</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./holiday.html">Holiday Package</a>
+                        <a class="dropdown-item" href="./honeymoon.html">Honeymoon Package</a>
+                        <a class="dropdown-item" href="./festive.html">Festive Package</a>
+                        <a class="dropdown-item" href="./vacation.html">Vacation Package</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        MORE <i class="fas fa-plus"></i></a>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./about.html#about"><i class="fas fa-info-circle"></i> About</a>
+                        <a class="dropdown-item" href="./contact.html#contact"><i class="fas fa-phone-alt"></i> Contact</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#cancellationModal"><i class="fas fa-exclamation-triangle"></i> Cancellation</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-check-circle"></i> Terms & Conditions</a>
+                    </div>
+                </li>
+                
+
+            </ul>
+        </nav>
+
+        <div class="fas fa-bars"></div>
+
+
+    </header>
+
+    <!-- header section ends -->
+
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="video">
+            <!--<video src="images/video.mp4" loop muted autoplay></video>-->
+            <img src="./images/hero.jpg" alt="Company Tagline" width="100vw">
+        </div>
+
+        <div class="content">
+            <h1>Explore detailed Package Tours</h1>
+        </div>
+
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- search section starts -->
+
+    <div id="searchbar" class="s002">
+        <form>
+            <!--<fieldset>
+                <legend><span>S</span>EARCH <span>H</span>OTEL</legend>
+            </fieldset>-->
+            <div class="inner-form">
+                <div class="input-field first-wrap">
+                    <div class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input id="search" type="text" placeholder="Enter location" />
+                </div>
+                <div class="input-field second-wrap">
+                    <div class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input type="text" placeholder="Pickup date" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                </div>
+                <div class="input-field third-wrap">
+                    <div class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input type="text" placeholder="drop date" onfocus="(this.type='date')" onblur="(this.type='text')" />
+                    <!--  class="datepicker" id="return" ,, id="depart" for checkin-->
+                </div>
+                <div class="input-field fouth-wrap">
+                    <div class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                          </svg>
+                    </div>
+                    <input id="search" type="number" placeholder="Guests" />
+                    
+                </div>
+                <div class="input-field fifth-wrap">
+                    <button class="btn-search" type="button">SEARCH</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- search section ends -->
+
+
+    <!-- Hotel/Resort/Home Stay Description Starts -->
+
+    <section id="details" class="gallery pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <!-- Hotel Details top  -->
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body">
+                                    <h1 class="mb-3 hotel-heading" style="font-size: 3.3rem;">
+                                        <span>H</span>aridwar - <span>R</span>ishikesh - <span>M</span>ussourie - <span>N</span>ainital
+                                    </h1>
+                                    <!--<h4 class="card-subtitle mb-2 text-muted">JA-1, JA Block, Sector III, Bidhannagar,
+                                        Kolkata, West Bengal 700098</h4>-->
+
+                                    <!-- Photo Grid -->
+                                    <div class="card photogrid" style="width: 100%;">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <img src="./images/hotel1.jpg" class="img-fluid">
+                                                    <img src="./images/resort1.jpg" class="img-fluid">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="./images/resort1.jpg" class="img-fluid">
+                                                    <img src="./images/popularDestination.jpg" class="img-fluid">
+                                                    <img src="./images/carousel.jpg" class="img-fluid">
+                                                    <img src="./images/room1.jpg" class="img-fluid">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <ul class="nav justify-content-between details-nav pt-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#overview">OVERVIEW</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#itinerary">ITINERARY</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#inclusion">INCLUSION</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#t&c">T & C</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#contact">CONTACT</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- About Section -->
+                            <section id="overview">
+                                <div class="card my-4 details-card" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h5 class="card-title pt-5"><span>O</span>verview</h5>
+                                        <p class="card-text">
+                                            <b>HARIDWAR:</b> Haridwar, lying at the feet of Shiva`s hills, i.e. Shivaliks, in the Haridwar district of Uttarakhand. Suryavanshi prince Bhagirathi performed penance here to salvage the souls of his ancestors who had perished due to the curse of sage Kapil. The penance was answered and the river Ganga trickled forth forms Lord Shiva`s locks and its bountiful water revived the sixty thousand sons of king Sagar. In the traditional of Bhagirathi, devout Hindus stand in the sacred waters here, praying for salvation of their departed elder. It is doorway to the sources of the Ganga and the Yamuna, 3000 to 4500 meters up into the snowy ranges of the central Himalayas. The Aarti worship of the Ganga after sunset and the floating dia (lamp) is a moving ritual
+                                            <br><br>
+                                            
+                                            <b>Rishikesh:</b> 24 Kms. from Haridwar, located in the laps of lower Himalayas, and is surrounded by scenic beauty of the hills on three sides with Holy Ganga flowing through it. The whole place is considered to be sacred as it is believed that meditation at this place leads to attainment of salvation. There are many temples some ancient, some new along the river Ganges. Rishikesh is important not only as pilgrimage centre closely associated with the Ramayana, but also as home for many important centres of Hindu religious thought and spirituality, and as a very great Yoga Centre. There are many ashrams and Yoga institutes here. Rishikesh is also the gateway and the start-off point for journeys to important religious places like Badrinath, Kedarnath, Gangotri and Yamunotri.
+                                            <br><br>
+                                            
+                                            <b>Mussoorie:</b> It is a well-known hill station nestled in the Dehradun District of Uttarakhand in the region of North India. Being situated in the foothills of the Garhwal Himalayan ranges it is often referred to as the Queen of the Hills. In 1820, a British Army officer set up this town. Mussoorie is not only famed for its picturesque splendor but it has also urbanized into an imperative center of education and trade over the course of time. Nestled in the Himalayan foothills it reflects a royal look with its dense jungles, comfortable atmosphere and the wonderful views of the Doon Valley. The name of the place is derived from the Mansur shrub established in profusion around this region. Vestiges of its colonial past are still reflected in the architecture of this town. Mussoorie tourism has got many places of tourist interest such as outstanding natural sights like Childer`s Lodge or Gun Hill, the two highest peaks and the eminent Kempty cascade.
+                                            <br><br>
+                                            
+                                            <b>Nainital:</b> Nainital is a Himalayan resort town in the Kumaon region of Indiaâ€™s Uttarakhand state, at an elevation of roughly 2,000m. Formerly a British hill station, itâ€™s set around Nainital Lake, a popular boating site with Naina Devi Hindu Temple on its north shore. A cable car runs to Snow View observation point (at 2,270m), with vistas over the town and mountains including Nanda Devi, Uttarakhand highest peak.
+                                            <br><br>
+                                            <br>
+                                            <b>Package Details</b> <br><br>
+                                            Package Name : Haridwar, Rishikesh, Mussoorie & Nainital, <br><br>
+                                            
+                                            Package Days : 5 NIGHT/6 DAYS <br><br>
+                                            <br>
+                                            Tour Coverage Place : Haridwar Sightseeing Mansa Devi, Chandi Devi, Harki pauri, Daksh Mandir, Bharat Mata Mandir, Vaishno Devi Mandir, Bhooma Niketan, India Temple, Pawan Dham (Temple of Mirror) , Maa Anandmayee Ashram. Visit Rishikesh Â Neelkanth Mahadev Mandir and other places like SwargÂ Ashram, Parmarth Niketan, Geeta Mandir, Ram jhulaÂ , Laxman jhula, Laxman Mandir, 500 years Old Mandir, GadÂ Mandir. Mussoorie visit Malsi Deer Park (zoo), Fun valley (Amusement park), Mussoorie lake, kempty fall, Mall Road, Sahastradhara. Nainital Visit Naini Lake, Nainital Zoo, Aerial Ropeway Nainital, Naina Devi Temple, The Mall Road, Tiffin Top, Eco Cave Gardens,Â Rajbhawan
+                                            <br><br>
+                                            <b>Package Cost Details</b><br><br>
+                                            7,300/- PER HEAD (Min - 8 Pax)Â  -Â By Car Bolero/Innova/Tavera
+                                            <br><br>
+                                            8,125/- PER HEAD (Min - 6 Pax) -Â By Car Bolero/Innova/Tavera
+                                            <br><br>
+                                            8,070/- PER HEAD (Min - 5 Pax) -Â By Car Bolero/Innova/Tavera
+                                            <br><br>
+                                            9,800/- PER HEAD (Min - 4 Pax) -Â By Car Swift Dzire /Tata Indigo/Tata Indica
+                                            <br><br>
+                                            10,250/- PER HEAD (Min -3 Pax) -Â By Car Swift Dzire /Tata Indigo/Tata Indica
+                                            <br><br>
+                                            14,800/- PER HEAD (Min -2 Pax) -Â By Car Swift Dzire /Tata Indigo/Tata Indica
+                                            <br><br>
+                                            Plan = EP (Only Room) & Car Service
+                                            <br><br>
+                                            Hotel = Standard HotelÂ 
+                                            <br><br>
+                                            Room = Standard Double Bed/Standard Triple Bed
+                                            <br><br>
+                                            Haridwar 4 Night;
+                                            <br><br>
+                                            Nainital 1 Night
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- itinerary Section -->
+                            <section id="itinerary">
+                                <div class="card my-4 details-card" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h5 class="card-title pt-5"><span>I</span>tinerary</h5>
+                                        <p class="card-text">
+                                        <b>Holiday Programme Itinerary</b><br><br>
+                                            DAY 1 Check in Haridwar Hotel and after rfreshment and free for evening walk. and Night Stay in Haridwar Hotel
+                                            <br><br>
+                                        Day 2 - Visit Full Haridwar Sidescene Mansa Devi, Chandi Devi, Harki pauri, Daksh Mandir, Bharat Mata Mandir, Vaishno
+                                            Devi Mandir, BhoomaNiketan, India Temple, Pawan Dham (Temple of Mirror) , Maa Anandmayee Ashram.. back to Hotel and
+                                            Night Stay in Haridwar Hotel
+                                            <br><br>
+                                        Day 3 - Drive to Rishikesh and Visit Neelkanth Mahadev Mandir and other places like Swarag Ashram, Parmarth Niketan,
+                                            Geeta Mandir, Ram jhulla , Laxman jhulla, Laxman Mandir, 500 years Old Mandir, Garud Mandir and then back to
+                                            Haridwar Hotel and Night Stay in Haridwar Hotel.
+                                            <br><br>
+                                        4th Day - Early morning move to Mussoorie visit Malsi Deer Park (zoo), Fun valley (Amusement park), Mussoorie lake,
+                                            Kempty fall, MallRoad, Sahastradhara and back to Haridwar and Night Stay in Haridwar Hotel
+                                            <br><br>
+                                        5th Day - Early morning move to Nainital (4 Hr & amp; 40 Mint. 237 KM) and on the way Visit Sightseeing Naini Lake,
+                                            Sattal, Tifin Top, Snow View Point, Church, Gurney House and St. John in the Wilderness, Mallital of Nainital and in
+                                            evening Check in Nainital Hotel and Night Stay.
+                                            <br><br>
+                                        6th Day - In Early Morning Visit Local Sightseeing Sariyatal, Bhimtal, Phool Devi and back to hotel in Check out time
+                                            ( 12:00 Noon) and Check out from Hotel Visit Sightseeing Zoo, Naina Devi mandir and Naina Peak in Naital and in
+                                            Evening Drop to Kathgodam Rail Station.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- inclusion Section -->
+                            <section id="inclusion">
+                                <div class="card my-4 details-card" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h5 class="card-title pt-5"><span>I</span>nclusion</h5>
+                                        <p class="card-text">
+                                            Inclusion:<br>
+                                                <b>Package Inclusions</b><br>
+                                                Transportation from Haridwar to Nainital, Mussoorie, Rishikesh and Drop to Kathgodam Rail Station<br>
+                                                All Pickup and Dropping Facility at one Point in Haridwar &amp; Kathgodam Rail Station<br>
+                                                Good Hotel Accommodation for 5 Night and 6 Days<br>
+                                                Driver&acirc;&euro;&trade;s TA and DA<br>
+                                                All Fuel Charges<br>
+                                                All Permit<br>
+                                                All Toll &acirc;&euro;&ldquo; Parking Fee<br><br>
+                                                <b>Room Facility:</b><br>
+                                                Room Service<br>
+                                                Hot &amp; Cold Water<br>
+                                                Attached Bathroom<br>
+                                                Restaurant and Kitchen Facility<br>
+                                                Doctor on Call<br>
+                                                Power Backup<br>
+                                                Every Room Colour TV with Satellite Channel<br><br>
+                                                <b>Car Service:</b><br>
+                                                Tavera/Tempo Traveler/Innova/Bolero/Swift&Acirc; Dzire/Tata indigo/Tata Indica
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- t&c Section -->
+                            <section id="t&c">
+                                <div class="card my-4 details-card" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h5 class="card-title pt-5"><span>T</span>erms & <span>C</span>onditions</h5>
+                                        <p class="card-text">
+                                            <b>Cancellation policy:</b><br>
+                                                1. 25% of the booking money will be deducted, if cancelled within 90 days from the date of journey.<br>
+                                                2. 30% of the paid up amount will be deducted, if cancelled between 60 days to 90 days from the journey date.<br>
+                                                3. 50% of the paid up amount will be deducted, if cancelled between 30 days to 60 days from the journey date.<br>
+                                                4. No refund will be made in case of Cancellation on the journey date.<br>
+
+                                                5. Cancellation money will be returned in your account within 15 working days, from the date of such cancellations.<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- contact Section -->
+                            <section id="contact">
+                                <div class="card my-4 details-card" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h5 class="card-title pt-5"><span>C</span>ontact</h5>
+                                        <p class="card-text">
+                                            <b>Prakriti India Tourism Pvt.Ltd.</b><br>
+                                            21/6, Ghoshpara Road,
+                                            Ichapur Kalitala Bus Stop
+                                            Post - Ichapur Nawabganj
+                                            North 24 Parganas - 743144, West Bengal
+                                            <br><br>
+
+                                            Help Line No : +91 8017 013 434<br>
+
+                                            Whatsapp No : +91 8017 013 434<br>
+
+                                            Mail : accoladestravelcations@gmail.com<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                        </div>
+
+
+                        <!-- Sidebar Starts -->
+                        <div class="col-md-4">
+                            <div class="card text-center" style="width: 100%;">
+                                <div class="card-body">
+                                    <div class="col-md-12 d-flex flex-column">
+                                        <h5 class="card-title py-3">Price Per Head : <span class="pricetag">7400/-</span> </h5>
+                                        <h5 class="card-title py-3">Date : 27/08/2021</h5>
+                                    </div>
+                                    <hr class="my-4">
+
+                                    <div class="col-md-12 d-flex flex-column">
+                                        <p class="card-text text-left"><b>Tour Duration:</b> 5 Night / 6 Days </p>
+                                        <p class="card-text text-left"><b>Best Session:</b> October and May to June</p>
+                                        <p class="card-text text-left"><b>Nearest Rail Station:</b> Haridwar </p>
+                                        <p class="card-text text-left"><b>Nearest Airport:</b> Dehradun Airport </p>
+                                    </div>
+                                    <hr class="my-4">
+
+                                    <div class="col-md-12 d-flex flex-column">
+                                        <h5 class="card-title">Booking Helpline Number</h5>
+                                        <h5 class="card-title text-danger" style="font-size: 2.3rem; color: #e60707; font-weight: bolder;">+91 8017 013 434</h5>
+                                        
+                                        <div class="p-3">
+                                            <a class="btn btn-success" href="./contact.html#enquiry" role="button" style="font-size: 2rem;">Quick
+                                                Enquiry</a>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sidebar Ends -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel/Resort/Home Stay Description Ends -->
+
+
+    <!-- FAQ section starts  -->
+
+    <section id="faq" class="gallery">
+
+        <h1 class="heading"><span>F</span>requently <span>A</span>sked <span>Q</span>uestions</h1>
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                1. What do you think about First Question ?
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Some placeholder content for the first accordion panel. This panel is shown by default,
+                            thanks
+                            to the <code>.show</code> class.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                2. What do you think about Second Question ?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Some placeholder content for the second accordion panel. This panel is hidden by default.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                3. What do you think about Third Question ?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            And lastly, the placeholder content for the third and final accordion panel. This panel is
+                            hidden by default.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ section ends -->
+
+
+    <!-- Footer section starts -->
+    
+    <section class="newsletter">
+    
+        <h1>Have some Doubt ?</h1>
+    
+        <p>Call us on : +91 8017 013 434</p>
+    
+        <div class="container" style="max-width: 35rem;">
+            <a class="btn btn-primary btn-grad" href="./contact.html#enquiry" role="button">Submit a Query</a>
+        </div>
+    
+    </section>
+    
+    <section class="footer">
+    
+        <h1 class="credit">Developed by <a href="#"><span>Acs. Pvt Ltd</span></a> | on behalf of
+            <span>Accoladestravelcations Pvt Ltd. </span>| all rights reserved.
+        </h1>
+    
+        <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="far fa-envelope"></a>
+            <a href="#" class="fab fa-youtube"></a>
+        </div>
+    
+    </section>
+    
+    <!-- Footer section ends -->
+
+
+
+
+
+    <!-- jquery cdn link  -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

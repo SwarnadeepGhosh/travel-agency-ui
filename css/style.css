@@ -1953,6 +1953,167 @@ h5 {
 }
 /* Hotel Details - Rooms Section Ends **************************************************************************/
 
+
+/* Holiday list section starts **************************************************************************/
+
+.holiday {
+
+}
+.holiday h1 {
+  color: var(--color-primary);
+}
+.holiday span {
+  color: var(--color-secondary);
+}
+
+.holiday .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.holiday .card-container .card {
+  width: 30rem;
+  margin: 2rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.holiday .card-container .card img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.holiday .card-container .content {
+  padding-bottom: 1.2rem;
+  text-align: center;
+}
+
+.holiday .card-container .content .title {
+  color: var(--color-primary);
+  padding-top: 7px;
+  font-size: 2.4rem;
+  font-family: var(--poppins-font);
+}
+
+.holiday .card-container .content p {
+  color: var(--color-secondary);
+  font-size: 1.3rem;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+.holiday .card-container .content ul {
+  font-size: 1.5rem;
+  text-align: left;
+  list-style-type: none;
+}
+.holiday .card-container .content ul li{
+  padding: 2px 0 2px 0;
+  font-weight: 400;
+}
+
+.holiday .card-container .content .stars i {
+  padding: 0 0.2rem;
+  font-size: 2rem;
+  color: gold;
+}
+
+.holiday .card-container .content .btn, .text .btn {
+  font-size: 1.7rem;
+  margin-top: 1.4rem;
+  height: 3.5rem;
+  width: 12rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.holiday .card-container .content .btn:hover, .text .btn:hover {
+  background: none;
+  border: 0.2rem solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.holiday .card-container .card .discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: block;
+  height: 3.5rem;
+  width: 6rem;
+  background: #ff3300;
+  color: #fff;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,81,85,0.7) 100%);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  width: 90%;
+  height: 70%;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text p{
+  font-size: 1.4rem;
+}
+.text span{
+  font-size: 1.8rem;
+  color: #ffc72d;
+}
+.text  ul {
+  font-size: 1.5rem;
+  text-align: left;
+  list-style-type: none;
+}
+.text ul li{
+  padding: 2px 0 2px 0;
+  font-weight: 400;
+}
+.pricetag{
+  font-size: 2.3rem; 
+  color: #e60707; 
+  font-weight: bolder;
+}
+
+/* Hotel Details - Rooms Section Ends **************************************************************************/
+
+
 /* Review ad Rating Section - Hotel Detail page starts **************************************************************************/
 .ratings-card {
   border-radius: 5px;
