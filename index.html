@@ -17,6 +17,42 @@
 </head>
 
 <body>
+  
+  <!--Cancellation Modal starts -->
+  <div class="modal fade" id="cancellationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Booking Cancellation Request</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label class="sr-only" for="inlineFormInputGroup">Booking Id</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-portrait"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Booking Id">
+            </div>
+
+            <label class="sr-only" for="inlineFormInputGroup">Mobile Number</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-phone-square-alt"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Mobile Number">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Cancellation Modal ends -->
 
     <!-- header section starts  -->
 
@@ -29,45 +65,51 @@
 
         <nav class="navbar">
             <ul>
-                <li><a data-scroll="home" href="./index.html" class="active"><i class="fas fa-home"></i> HOME</a></li>
+                <li><a href="./index.html" class="active"><i class="fas fa-home"></i> HOME</a></li>
                 <li class="dropdown">
-                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-hotel"></i> HOTELS</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Hotels</a>
-                      <a class="dropdown-item" href="#">Home Stays</a>
-                      <a class="dropdown-item" href="#">Resorts</a>
+                        <a class="dropdown-item" href="./hotels.html">Hotels</a>
+                        <a class="dropdown-item" href="./homestay.html">Home Stays</a>
+                        <a class="dropdown-item" href="./resorts.html">Resorts</a>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-umbrella-beach"></i> HOLIDAY</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Holiday Package</a>
-                      <a class="dropdown-item" href="#">honeymoon package</a>
-                      <a class="dropdown-item" href="#">Festive Package</a>
-                      <a class="dropdown-item" href="#">Vacation Package</a>
+                        <a class="dropdown-item" href="./holiday.html">Holiday Package</a>
+                        <a class="dropdown-item" href="./honeymoon.html">Honeymoon Package</a>
+                        <a class="dropdown-item" href="./festive.html">Festive Package</a>
+                        <a class="dropdown-item" href="./vacation.html">Vacation Package</a>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         MORE <i class="fas fa-plus"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="./about.html#about"><i class="fas fa-info-circle"></i> About</a>
-                      <a class="dropdown-item" href="./contact.html#contact"><i class="fas fa-phone-alt"></i> Contact</a>
-                      <a class="dropdown-item" href="#"><i class="fas fa-exclamation-triangle"></i> Cancellation</a>
-                      <a class="dropdown-item" href="#"><i class="fas fa-check-circle"></i> Terms and Condition</a>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./about.html#about"><i class="fas fa-info-circle"></i> About</a>
+                        <a class="dropdown-item" href="./contact.html#contact"><i class="fas fa-phone-alt"></i> Contact</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#cancellationModal"><i class="fas fa-exclamation-triangle"></i> Cancellation</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-check-circle"></i> Terms & Conditions</a>
                     </div>
                 </li>
+                
 
             </ul>
         </nav>
 
         <div class="fas fa-bars"></div>
 
+
     </header>
 
     <!-- header section ends -->
+
 
     <!-- home section starts  -->
 
@@ -79,25 +121,78 @@
         </div>
 
         <div class="content">
-            <h1>explore best in class <br> hotels and Holiday plans</h1>
+            <h1>Explore Best In Class <br> Hotels and Holiday Plans</h1>
         </div>
 
         <div class="form-container">
-            <form action="">
+            <form autocomplete="off" action="">
 
-                <h3>search your destination</h3>
+                <h3>Search your Destination</h3>
 
-                <span>location</span>
-                <input type="text" placeholder="place you want to visit">
+                <span>Location / Hotel Name</span>
+                <input type="text" placeholder="Place or Hotel Name you want to visit">
 
-                <span>guest members</span>
-                <input type="number" placeholder="number of peoples">
+                <span>Number of Rooms</span>
 
-                <span>arrival</span>
-                <input type="date">
+                <div class="roompopup">
+                    <div class="message" id="popmessg">
 
-                <span>leaving</span>
-                <input type="date">
+                        <input type="hidden" id="totaloffqty" value="1">
+
+                        <div class="mainwidth">
+                            <p class="hints" style="color:#000;">Adult: 12+ / Child: 4+</p>
+                            <p class="input_fields_wrap">
+                                <span>
+
+                                    <select class="form-control useronename">
+                                        <option value="">-- Adult --</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+
+
+                                    <select class="form-control useronephone">
+                                        <option value="">-- Child --</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+
+                                </span>
+                            <div class="clearfix"></div>
+
+
+                            </p>
+                            <div class="row">
+                                <div class="col-xs-6 mx-2">
+                                    <div class="adbtn"><a href="#" class="add_field_button">+ Add Room</a></div>
+                                </div>
+
+                                <div class="col-xs-6 mx-2">
+                                    <div class="rmsubmt"><a href="#" id="saveCategories" onClick="closetrnsblc();">Done</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control myfldcls" id="actualresult" name="hmhbroopprsn" placeholder="Room No" onClick="openpop();">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Check in</span><input type="date">
+                    </div>
+                    <div class="col-md-6">
+                        <span>Check Out</span><input type="date">
+                    </div>
+                </div>
+
+                <span>Phone Number</span>
+                <input type="tel" placeholder="Please enter your mobile number">
 
                 <input type="submit" value="search">
 
@@ -158,7 +253,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -296,7 +391,9 @@
 
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel/Ashoka resort in bandhavgarh.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <img src="./images/hotel/Ashoka resort in bandhavgarh.jpg"
+                                                style="height:250px" class="card-img-top img-fluid img-thumbnail alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Ashoka Resort</h5>
                                                 <p class="card-text">BANDHAVGARH</p>
@@ -307,14 +404,17 @@
                                                     <i class="fas fa-star-half-alt"></i>
                                                     <i class="far fa-star"></i>
                                                 </div>
-                                                <h2 class="card-title money">1500/- <span class="money-line-through">2200/-</span></h2>
+                                                <h2 class="card-title money">1500/- <span
+                                                        class="money-line-through">2200/-</span></h2>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel/BISON RESORT IN KANHA, MP.jpeg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <img src="./images/hotel/BISON RESORT IN KANHA, MP.jpeg"
+                                                style="height:250px" class="card-img-top img-fluid img-thumbnail alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Bison Resort in Kanha</h5>
                                                 <p class="card-text">Madhya Pradesh</p>
@@ -325,14 +425,16 @@
                                                     <i class="fas fa-star-half-alt"></i>
                                                     <i class="far fa-star"></i>
                                                 </div>
-                                                <h2 class="card-title money">1765/- <span class="money-line-through">2100/-</span></h2>
+                                                <h2 class="card-title money">1765/- <span
+                                                        class="money-line-through">2100/-</span></h2>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel/eden_residency shillong.jpeg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <img src="./images/hotel/eden_residency shillong.jpeg" style="height:250px"
+                                                class="card-img-top img-fluid img-thumbnail alt=" 100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Eden Residency</h5>
                                                 <p class="card-text">Shillong</p>
@@ -343,7 +445,8 @@
                                                     <i class="fas fa-star-half-alt"></i>
                                                     <i class="far fa-star"></i>
                                                 </div>
-                                                <h2 class="card-title money">1765/- <span class="money-line-through">2100/-</span></h2>
+                                                <h2 class="card-title money">1765/- <span
+                                                        class="money-line-through">2100/-</span></h2>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
@@ -356,7 +459,9 @@
 
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel/Ashoka resort in bandhavgarh.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <img src="./images/hotel/Ashoka resort in bandhavgarh.jpg"
+                                                style="height:250px" class="card-img-top img-fluid img-thumbnail alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Ashoka Resort</h5>
                                                 <p class="card-text">BANDHAVGARH</p>
@@ -367,14 +472,16 @@
                                                     <i class="fas fa-star-half-alt"></i>
                                                     <i class="far fa-star"></i>
                                                 </div>
-                                                <h2 class="card-title money">1500/- <span class="money-line-through">2200/-</span></h2>
+                                                <h2 class="card-title money">1500/- <span
+                                                        class="money-line-through">2200/-</span></h2>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel/gandharf hotel, dehradun.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <img src="./images/hotel/gandharf hotel, dehradun.jpg" style="height:250px"
+                                                class="card-img-top img-fluid img-thumbnail alt=" 100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Gandarf Hotel</h5>
                                                 <p class="card-text">Dehradun</p>
@@ -385,14 +492,17 @@
                                                     <i class="fas fa-star-half-alt"></i>
                                                     <i class="far fa-star"></i>
                                                 </div>
-                                                <h2 class="card-title money">1765/- <span class="money-line-through">2100/-</span></h2>
+                                                <h2 class="card-title money">1765/- <span
+                                                        class="money-line-through">2100/-</span></h2>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel/Green Leaf Hotel in Nainital.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <img src="./images/hotel/Green Leaf Hotel in Nainital.jpg"
+                                                style="height:250px" class="card-img-top img-fluid img-thumbnail alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Green Leaf Hotel </h5>
                                                 <p class="card-text">Nainital</p>
@@ -403,7 +513,8 @@
                                                     <i class="fas fa-star-half-alt"></i>
                                                     <i class="far fa-star"></i>
                                                 </div>
-                                                <h2 class="card-title money">1765/- <span class="money-line-through">2100/-</span></h2>
+                                                <h2 class="card-title money">1765/- <span
+                                                        class="money-line-through">2100/-</span></h2>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
@@ -418,7 +529,8 @@
 
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel/Hardik Palace in Jaipur.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <img src="./images/hotel/Hardik Palace in Jaipur.jpg" style="height:250px"
+                                                class="card-img-top img-fluid img-thumbnail alt=" 100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Hardik Palace</h5>
                                                 <p class="card-text">Jaipur</p>
@@ -429,14 +541,17 @@
                                                     <i class="fas fa-star-half-alt"></i>
                                                     <i class="far fa-star"></i>
                                                 </div>
-                                                <h2 class="card-title money">1500/- <span class="money-line-through">2200/-</span></h2>
+                                                <h2 class="card-title money">1500/- <span
+                                                        class="money-line-through">2200/-</span></h2>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel/HOTEL PRIME MURTI RESORT IN DOOARS.jpg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <img src="./images/hotel/HOTEL PRIME MURTI RESORT IN DOOARS.jpg"
+                                                style="height:250px" class="card-img-top img-fluid img-thumbnail alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Hotel Prime Murti</h5>
                                                 <p class="card-text">Dooars, WB</p>
@@ -447,14 +562,17 @@
                                                     <i class="fas fa-star-half-alt"></i>
                                                     <i class="far fa-star"></i>
                                                 </div>
-                                                <h2 class="card-title money">1765/- <span class="money-line-through">2100/-</span></h2>
+                                                <h2 class="card-title money">1765/- <span
+                                                        class="money-line-through">2100/-</span></h2>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/hotel/RAJAHAMSA GUEST HOUSE IN VIZAG.jpeg" style="height:250px"  class="card-img-top img-fluid img-thumbnail alt="100%x280">
+                                            <img src="./images/hotel/RAJAHAMSA GUEST HOUSE IN VIZAG.jpeg"
+                                                style="height:250px" class="card-img-top img-fluid img-thumbnail alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Rajahamsa Guest House</h5>
                                                 <p class="card-text">Vizag</p>
@@ -465,7 +583,8 @@
                                                     <i class="fas fa-star-half-alt"></i>
                                                     <i class="far fa-star"></i>
                                                 </div>
-                                                <h2 class="card-title money">1765/- <span class="money-line-through">2100/-</span></h2>
+                                                <h2 class="card-title money">1765/- <span
+                                                        class="money-line-through">2100/-</span></h2>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
@@ -491,7 +610,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-10">
-                    <h1 class="mb-3 short-heading"><span>M</span>ost <span>P</span>opular <span>G</span>roup <span>T</span>ours
+                    <h1 class="mb-3 short-heading"><span>M</span>ost <span>P</span>opular <span>G</span>roup
+                        <span>T</span>ours
                     </h1>
                 </div>
                 <div class="col-2 text-right short-heading-arrows">
@@ -511,30 +631,36 @@
 
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="100%x280">
+                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Sikkim Silk Route</h5>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut
+                                                    labore et dolore magna aliqua.</p>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="100%x280">
+                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Gangtok, Yungthung & Pelling</h5>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut
+                                                    labore et dolore magna aliqua.</p>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="100%x280">
+                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Chardham Yatra</h5>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut
+                                                    labore et dolore magna aliqua.</p>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
@@ -547,30 +673,36 @@
 
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="100%x280">
+                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Sikkim Silk Route</h5>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut
+                                                    labore et dolore magna aliqua.</p>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="100%x280">
+                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Gangtok, Yungthung & Pelling</h5>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut
+                                                    labore et dolore magna aliqua.</p>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
-                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="100%x280">
+                                            <img src="./images/groupTour.jpg" class="card-img-top img-fluid alt="
+                                                100%x280">
                                             <div class="card-body">
                                                 <h5 class="card-title">Chardham Yatra</h5>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <p class="card-text">Lorem ipsum dolor sit amet, tempor incididunt ut
+                                                    labore et dolore magna aliqua.</p>
                                                 <a href="./detail.html" class="btn btn-primary">Read more</a>
                                             </div>
                                         </div>
@@ -657,6 +789,7 @@
 
     <section id="review" class="review">
 
+        
         <h1 class="heading"><span>r</span>eviews</h1>
 
 
@@ -791,34 +924,34 @@
 
 
     <!-- Footer section starts -->
-
+    
     <section class="newsletter">
-
+    
         <h1>Get Access to Exclusive Deals</h1>
-
+    
         <p>Sign up and we'll send the best deals to you.</p>
-
+    
         <form action="">
             <input type="email" placeholder="enter your email">
             <input type="submit" value="sign up">
         </form>
-
+    
     </section>
-
-
+    
     <section class="footer">
-
-        <h1 class="credit">Developed by <a href="#"><span>Acs. Pvt Ltd</span></a> | on behalf of <span>Accoladestravelcations Pvt Ltd. </span>| all
-            rights reserved.</h1>
-
+    
+        <h1 class="credit">Developed by <a href="#"><span>Acs. Pvt Ltd</span></a> | on behalf of
+            <span>Accoladestravelcations Pvt Ltd. </span>| all rights reserved.
+        </h1>
+    
         <div class="icons">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="far fa-envelope"></a>
             <a href="#" class="fab fa-youtube"></a>
         </div>
-
+    
     </section>
-
+    
     <!-- Footer section ends -->
 
 
@@ -826,7 +959,7 @@
 
     <!-- jquery cdn link  -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
